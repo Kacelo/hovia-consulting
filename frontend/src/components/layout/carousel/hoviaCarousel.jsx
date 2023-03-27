@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 function HoviaCarousel() {
   return (
-    <div style={{ height: "900px" }}>
+    <div style={{ maxHeight: "850px" }}>
       <Carousel fade>
         <Carousel.Item style={{ maxHeight: "850px" }}>
           <img
