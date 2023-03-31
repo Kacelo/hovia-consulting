@@ -3,6 +3,9 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
+
 function OurServices() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
   useEffect(() => {
@@ -19,7 +22,7 @@ function OurServices() {
     return { innerWidth, innerHeight };
   }
   return (
-    <div style={{margin: "2em 0"}}>
+    <div style={{ margin: "10em 0" }}>
       <h1>OUR SERVICES</h1>
       <Row
         xs={1}
@@ -30,6 +33,10 @@ function OurServices() {
         <Col lg={4}>
           <Card style={{ height: "100%" }}>
             <Card.Body>
+              <FontAwesomeIcon
+                icon={icon({ name: "user-graduate" })}
+                size="2xl"
+              />
               <Card.Title>FOR INDIVIDUALS</Card.Title>
               <Card.Text style={{ textAlign: "initial" }}>
                 Preparing individuals, learners and students with the essential
@@ -51,6 +58,11 @@ function OurServices() {
         <Col lg={4}>
           <Card style={{ height: "100%" }}>
             <Card.Body>
+              <FontAwesomeIcon
+                icon={icon({ name: "building-columns" })}
+                size="2xl"
+              />
+
               <Card.Title>FOR INSTITUTIONS</Card.Title>
               <Card.Text style={{ textAlign: "initial" }}>
                 We help institutions / companies thrive in their business
@@ -69,6 +81,10 @@ function OurServices() {
         <Col lg={4} sm={12}>
           <Card style={{ height: "100%" }}>
             <Card.Body>
+              <FontAwesomeIcon
+                icon={icon({ name: "people-group" })}
+                size="2xl"
+              />
               <Card.Title>INTERN PROGRAM</Card.Title>
               <Card.Text style={{ textAlign: "initial" }}>
                 Our Internship Programme aims to groom and empowerment final
