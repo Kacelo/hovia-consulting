@@ -22,13 +22,13 @@ function OurServices() {
     return { innerWidth, innerHeight };
   }
   return (
-    <div style={{ margin: "10em 0" }}>
+    <div style={{ margin: "15em 0" }}>
       <h1>OUR SERVICES</h1>
       <Row
         xs={1}
         md={2}
         className="g-4"
-        style={{ margin: windowSize.innerWidth > 1240 ? "0 200px" : "0 20px" }}
+        style={{ margin: windowSize.innerWidth > 1400 ? "0 300px" : "0 20px" }}
       >
         <Col lg={4}>
           <Card style={{ height: "100%" }}>
@@ -36,6 +36,7 @@ function OurServices() {
               <FontAwesomeIcon
                 icon={icon({ name: "user-graduate" })}
                 size="2xl"
+                style={{ padding: "1em" }}
               />
               <Card.Title>FOR INDIVIDUALS</Card.Title>
               <Card.Text style={{ textAlign: "initial" }}>
@@ -48,8 +49,8 @@ function OurServices() {
               </Card.Text>
             </Card.Body>
             <Card.Footer
-              style={{ borderTop: "none", backgroundColor: "white" }}
-            >
+              style={{ borderTop: "none", backgroundColor: "white", padding: '2em' }}
+              >
               {" "}
               <Button variant="primary">READ MORE</Button>{" "}
             </Card.Footer>{" "}
@@ -61,6 +62,7 @@ function OurServices() {
               <FontAwesomeIcon
                 icon={icon({ name: "building-columns" })}
                 size="2xl"
+                style={{ padding: "1em" }}
               />
 
               <Card.Title>FOR INSTITUTIONS</Card.Title>
@@ -71,10 +73,10 @@ function OurServices() {
               </Card.Text>
             </Card.Body>
             <Card.Footer
-              style={{ borderTop: "none", backgroundColor: "white" }}
-            >
+              style={{ borderTop: "none", backgroundColor: "white", padding: '2em' }}
+              >
               {" "}
-              <Button variant="primary">MORE</Button>{" "}
+              <Button variant="primary">READ MORE</Button>{" "}
             </Card.Footer>{" "}
           </Card>
         </Col>
@@ -84,6 +86,7 @@ function OurServices() {
               <FontAwesomeIcon
                 icon={icon({ name: "people-group" })}
                 size="2xl"
+                style={{ padding: "1em" }}
               />
               <Card.Title>INTERN PROGRAM</Card.Title>
               <Card.Text style={{ textAlign: "initial" }}>
@@ -98,7 +101,7 @@ function OurServices() {
               </Card.Text>
             </Card.Body>
             <Card.Footer
-              style={{ borderTop: "none", backgroundColor: "white" }}
+              style={{ borderTop: "none", backgroundColor: "white", padding: '2em' }}
             >
               {" "}
               <Button variant="primary">APPLY NOW</Button>{" "}
