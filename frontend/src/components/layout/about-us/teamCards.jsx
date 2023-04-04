@@ -17,7 +17,7 @@ const TeamCards = () => {
     return { innerWidth, innerHeight };
   }
   return (
-    <div style={{ margin: "5em 0" }}>
+    <div style={{ margin: "10em 0" }}>
       <h1>MEET THE TEAM</h1>
       <Row
         xs={1}

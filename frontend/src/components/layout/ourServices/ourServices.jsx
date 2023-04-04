@@ -28,7 +28,7 @@ function OurServices() {
         xs={1}
         md={2}
         className="g-4"
-        style={{ margin: windowSize.innerWidth > 1400 ? "0 300px" : "0 20px" }}
+        style={{ margin: windowSize.innerWidth > 1400 ? "0 200px" : "0 20px" }}
       >
         <Col lg={4}>
           <Card style={{ height: "100%" }}>

@@ -22,15 +22,34 @@ function AboutUs() {
   }
   return (
     <div style={{ margin: "15em 0" }}>
+      <div style={{ position: "relative" }}>
+        <div className="about-us-image">
+          <img
+            src="https://www.selloinstitute.co.za/wp-content/uploads/2020/04/titleBG.jpg"
+            alt=""
+            style={{ width: "100%" }}
+          ></img>
+        </div>
+        <div
+          className="about-us-wording"
+          style={{
+            position: "absolute",
+            top: " 50%",
+            left: "50%",
+            color: "white",
+            transform: " translate(-50%, -50%)",
+          }}
+        >
+          <h1>ABOUT US</h1>
+        </div>
+      </div>
       <Row
         xs={1}
         // md={2}
         className="g-4"
         style={{ margin: windowSize.innerWidth > 1400 ? "0 300px" : "0 20px" }}
       >
-        <Col>
-          <h1>ABOUT US</h1>
-        </Col>
+        <Col></Col>
       </Row>
       <Row
         style={{ margin: windowSize.innerWidth > 1400 ? "0 200px" : "0 20px" }}
