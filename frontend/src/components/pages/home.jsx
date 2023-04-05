@@ -7,7 +7,6 @@ function Home() {
   return (
     <div>
       <HoviaCarousel />
-      <AboutUs />
       <OurServices />
     </div>
   );

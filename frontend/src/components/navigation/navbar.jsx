@@ -5,7 +5,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { Phone, Mail, MapPin } from "react-feather";
-
+import { ROUTESLIST } from "../../configs";
+const {HOME, ABOUT_US, CONTACT_US} = ROUTESLIST
 function HoviaNavbar() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
   useEffect(() => {
@@ -161,7 +162,7 @@ function HoviaNavbar() {
         expand="lg"
         style={{ textAlign: "center", padding: "1em 1em" }}
       >
-        <Navbar.Brand href="#home">HEC LOGO</Navbar.Brand>
+        <Navbar.Brand href={HOME}>HEC LOGO</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" style={{ textAlign: "center" }}>
           <Nav
@@ -172,10 +173,10 @@ function HoviaNavbar() {
               justifyContent: "space-between",
             }}
           >
-            <Nav.Link href="#home" style={{ margin: "0em" }}>
+            <Nav.Link href={HOME} style={{ margin: "0em" }}>
               Home
             </Nav.Link>
-            <Nav.Link href="#link" style={{ margin: "0em" }}>
+            <Nav.Link href={ABOUT_US} style={{ margin: "0em" }}>
               About Us
             </Nav.Link>
             <Nav.Link href="#link" style={{ margin: "0em" }}>

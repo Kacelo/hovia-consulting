@@ -21,7 +21,7 @@ function AboutUs() {
     return { innerWidth, innerHeight };
   }
   return (
-    <div style={{ margin: "15em 0" }}>
+    <div style={{ margin: "0 0" }}>
       <div style={{ position: "relative" }}>
         <div className="about-us-image">
           <img
@@ -52,12 +52,12 @@ function AboutUs() {
         <Col></Col>
       </Row>
       <Row
-        style={{ margin: windowSize.innerWidth > 1400 ? "0 200px" : "0 20px" }}
+        style={{ margin: windowSize.innerWidth > 1400 ? "2em 200px" : "0 20px" }}
       >
         <Col sm={12} lg={6}>
           <div style={{ textAlign: "initial" }}>
             <div>
-              <h5>Who we are...</h5>
+              <h2>Who we are...</h2>
             </div>
             <p>
               HEC is an Educational Consulting Company that offers a variety of
