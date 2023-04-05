@@ -28,7 +28,7 @@ function OurServices() {
         xs={1}
         md={2}
         className="g-4"
-        style={{ margin: windowSize.innerWidth > 1400 ? "0 200px" : "0 20px" }}
+        style={{ margin: windowSize.innerWidth > 1400 ? "0 300px" : "0 20px" }}
       >
         <Col lg={4}>
           <Card style={{ height: "100%" }}>
@@ -39,7 +39,7 @@ function OurServices() {
                 style={{ padding: "1em" }}
               />
               <Card.Title>FOR INDIVIDUALS</Card.Title>
-              <Card.Text style={{ textAlign: "initial" }}>
+              <Card.Text style={{ textAlign: "initial", padding: '0 2em' }}>
                 Preparing individuals, learners and students with the essential
                 skills for the future requires all Educators to create a
                 collaborative culture for learning that sparks curiosity and
@@ -66,7 +66,7 @@ function OurServices() {
               />
 
               <Card.Title>FOR INSTITUTIONS</Card.Title>
-              <Card.Text style={{ textAlign: "initial" }}>
+              <Card.Text style={{ textAlign: "initial", padding: '0 2em' }}>
                 We help institutions / companies thrive in their business
                 operations, to achieve optimal efficiency and productivity with
                 our customized services, while focusing on their end goal.
@@ -89,7 +89,7 @@ function OurServices() {
                 style={{ padding: "1em" }}
               />
               <Card.Title>INTERN PROGRAM</Card.Title>
-              <Card.Text style={{ textAlign: "initial" }}>
+              <Card.Text style={{ textAlign: "initial", padding: '0 2em' }}>
                 Our Internship Programme aims to groom and empowerment final
                 year college individuals and young professionals in their
                 respective field of study and develop their potential in
