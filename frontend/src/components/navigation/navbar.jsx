@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { Phone, Mail, MapPin } from "react-feather";
 import { ROUTESLIST } from "../../configs";
-const {HOME, ABOUT_US, CONTACT_US} = ROUTESLIST
+const { HOME, ABOUT_US, CONTACT_US } = ROUTESLIST;
 function HoviaNavbar() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
   useEffect(() => {
@@ -29,7 +29,9 @@ function HoviaNavbar() {
       ) : (
         <div>
           <div className="container-fluid">
-            <Row style={{ alignItems: "center!important", padding: "1em 0 0 0" }}>
+            <Row
+              style={{ alignItems: "center!important", padding: "1em 0 0 0" }}
+            >
               <div
                 className="middle-header-right-content"
                 style={{ textAlign: "initial" }}
@@ -162,15 +164,22 @@ function HoviaNavbar() {
         expand="lg"
         style={{ textAlign: "center", padding: "1em 1em" }}
       >
-        <Navbar.Brand href={HOME}>HEC LOGO</Navbar.Brand>
+        <Navbar.Brand href={HOME}>
+          <img
+            width="250"
+            height="80"
+            style={{ mixBlendMode: "darken" }}
+            src={require("/home/vernon/Desktop/hovia/hovia-consulting/frontend/src/assets/logo/logo.jpg")}
+          ></img>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" style={{ textAlign: "center" }}>
+        <Navbar.Collapse id="basic-navbar-nav" style={{ textAlign: "" }}>
           <Nav
-            className="me-auto"
+            className="ms-auto"
             style={{
-              textAlign: "justify",
+              textAlign: "initial",
               display: "flex",
-              justifyContent: "space-between",
+              // justifyContent: "space-between",
             }}
           >
             <Nav.Link href={HOME} style={{ margin: "0em" }}>
