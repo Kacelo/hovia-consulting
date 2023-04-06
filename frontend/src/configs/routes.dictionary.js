@@ -4,7 +4,7 @@ export const ROUTESLIST = {
   CONTACT_US: "/contact-us",
   ABOUT_US: "/about-us",
   SERVICES: {
-    INDIVIDUALS: "/services/individuals",
+    INDIVIDUALS: "/services",
     INSTITUTIONS: "/services/institutions",
     INTERNSHIPS: "/services/internship-program",
   },

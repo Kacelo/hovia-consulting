@@ -5,8 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/layout/about-us/about-us";
 import { ROUTESLIST } from "./configs";
 import { Layout } from "antd";
+import Individuals from "./components/layout/individuals/individuals";
 const { Content } = Layout;
-const { ABOUT_US, HOME, CONTACT_US } = ROUTESLIST;
+const { ABOUT_US, HOME, CONTACT_US, SERVICES } = ROUTESLIST;
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,8 @@ function App() {
               {/* <Route path="/" element={<Layout />}> */}
               <Route path={HOME} element={<Home />} />
               <Route path={ABOUT_US} element={<AboutUs />} />
+              <Route path={SERVICES.INDIVIDUALS} element={<Individuals />} />
+
               {/* </Route> */}
             </Routes>
           </Content>

@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
+import Individuals from "../individuals/individuals";
 
 function OurServices() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
@@ -39,7 +40,7 @@ function OurServices() {
                 style={{ padding: "1em" }}
               />
               <Card.Title>FOR INDIVIDUALS</Card.Title>
-              <Card.Text style={{ textAlign: "initial", padding: '0 2em' }}>
+              <Card.Text style={{ textAlign: "initial", padding: "0 2em" }}>
                 Preparing individuals, learners and students with the essential
                 skills for the future requires all Educators to create a
                 collaborative culture for learning that sparks curiosity and
@@ -49,8 +50,12 @@ function OurServices() {
               </Card.Text>
             </Card.Body>
             <Card.Footer
-              style={{ borderTop: "none", backgroundColor: "white", padding: '2em' }}
-              >
+              style={{
+                borderTop: "none",
+                backgroundColor: "white",
+                padding: "2em",
+              }}
+            >
               {" "}
               <Button variant="primary">READ MORE</Button>{" "}
             </Card.Footer>{" "}
@@ -66,15 +71,19 @@ function OurServices() {
               />
 
               <Card.Title>FOR INSTITUTIONS</Card.Title>
-              <Card.Text style={{ textAlign: "initial", padding: '0 2em' }}>
+              <Card.Text style={{ textAlign: "initial", padding: "0 2em" }}>
                 We help institutions / companies thrive in their business
                 operations, to achieve optimal efficiency and productivity with
                 our customized services, while focusing on their end goal.
               </Card.Text>
             </Card.Body>
             <Card.Footer
-              style={{ borderTop: "none", backgroundColor: "white", padding: '2em' }}
-              >
+              style={{
+                borderTop: "none",
+                backgroundColor: "white",
+                padding: "2em",
+              }}
+            >
               {" "}
               <Button variant="primary">READ MORE</Button>{" "}
             </Card.Footer>{" "}
@@ -89,7 +98,7 @@ function OurServices() {
                 style={{ padding: "1em" }}
               />
               <Card.Title>INTERN PROGRAM</Card.Title>
-              <Card.Text style={{ textAlign: "initial", padding: '0 2em' }}>
+              <Card.Text style={{ textAlign: "initial", padding: "0 2em" }}>
                 Our Internship Programme aims to groom and empowerment final
                 year college individuals and young professionals in their
                 respective field of study and develop their potential in
@@ -101,7 +110,11 @@ function OurServices() {
               </Card.Text>
             </Card.Body>
             <Card.Footer
-              style={{ borderTop: "none", backgroundColor: "white", padding: '2em' }}
+              style={{
+                borderTop: "none",
+                backgroundColor: "white",
+                padding: "2em",
+              }}
             >
               {" "}
               <Button variant="primary">APPLY NOW</Button>{" "}
