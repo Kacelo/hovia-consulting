@@ -1,6 +1,6 @@
 export const ROUTESLIST = {
   LANDING: "/",
-  HOME: "/home",
+  HOME: "/",
   CONTACT_US: "/contact-us",
   ABOUT_US: "/about-us",
   SERVICES: {

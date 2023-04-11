@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { Phone, Mail, MapPin } from "react-feather";
 import { ROUTESLIST } from "../../configs";
-const { HOME, ABOUT_US, CONTACT_US } = ROUTESLIST;
+const { ABOUT_US, HOME, CONTACT_US, SERVICES } = ROUTESLIST;
 function HoviaNavbar() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
   useEffect(() => {
@@ -188,7 +188,7 @@ function HoviaNavbar() {
             <Nav.Link href={ABOUT_US} style={{ margin: "0em" }}>
               About Us
             </Nav.Link>
-            <Nav.Link href="#link" style={{ margin: "0em" }}>
+            <Nav.Link href={SERVICES.INDIVIDUALS} style={{ margin: "0em" }}>
               Services
             </Nav.Link>
             <Nav.Link href="#link" style={{ margin: "0em" }}>

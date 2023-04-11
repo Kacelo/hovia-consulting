@@ -12,6 +12,11 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* .ant-layout-sider{
+  max-width: 200px!important;
+  width: 200px !important;
+  flex: 200px !important;
+} */
 
 .App-header {
   background-color: #282c34;
