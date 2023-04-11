@@ -6,6 +6,10 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 import Individuals from "../individuals/individuals";
+import { history } from "../../../helpers";
+import { ROUTESLIST } from "../../../configs/routes.dictionary";
+import { useHistory } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 
 function OurServices() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
@@ -20,8 +24,15 @@ function OurServices() {
   }, []);
   function getWindowSize() {
     const { innerWidth, innerHeight } = window;
+    console.log(innerWidth)
     return { innerWidth, innerHeight };
   }
+  // const route = useHistory();
+  const navigate = (path) =>
+    history.push({
+      pathname: path,
+    });
+  const { SERVICES } = ROUTESLIST;
   return (
     <div style={{ margin: "15em 0" }}>
       <h1>OUR SERVICES</h1>
@@ -29,7 +40,7 @@ function OurServices() {
         xs={1}
         md={2}
         className="g-4"
-        style={{ margin: windowSize.innerWidth > 1400 ? "0 300px" : "0 20px" }}
+        style={{ margin: windowSize.innerWidth > 1720 ? "0 300px" : "0 20px" }}
       >
         <Col lg={4}>
           <Card style={{ height: "100%" }}>
@@ -57,7 +68,15 @@ function OurServices() {
               }}
             >
               {" "}
-              <Button variant="primary">READ MORE</Button>{" "}
+
+            <Nav.Link href={SERVICES.INDIVIDUALS} style={{ margin: "0em" }}>
+            <Button
+                variant="primary"
+              >
+                READ MORE
+              </Button>{" "}
+            </Nav.Link>
+             
             </Card.Footer>{" "}
           </Card>
         </Col>

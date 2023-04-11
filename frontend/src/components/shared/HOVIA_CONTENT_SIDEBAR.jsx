@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 import {
   MenuFoldOutlined,
@@ -12,11 +12,25 @@ const { Header, Content, Footer, Sider } = Layout;
 function HOVIA_CONTENT_SIDEBAR(props) {
   const { contentArray, titles } = props;
   const [collapsed, setCollapsed] = useState(false);
-  const [comp, setComp] = useState("1");
+  const [component, setComponent] = useState("1");
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    console.log(innerWidth)
+    return { innerWidth, innerHeight };
+  }
   const {
     token: { colorBgContainer },
   } = theme.useToken();
-  console.log(contentArray);
   const contentDisplay = (compKey) => {
     if (compKey === "1") {
       return contentArray[0];
@@ -39,7 +53,7 @@ function HOVIA_CONTENT_SIDEBAR(props) {
         onCollapse={(collapsed, type) => {
           console.log(collapsed, type);
         }}
-        style={{ backgroundColor: "white" }}
+        style={{ backgroundColor: "white", width: "300px!important", maxWidth: "300px!important" }}
       >
         <div className="logo" />
 
@@ -48,7 +62,7 @@ function HOVIA_CONTENT_SIDEBAR(props) {
           mode="inline"
           defaultSelectedKeys={["1"]}
           onClick={({ key }) => {
-            setComp(key);
+            setComponent(key);
             console.log(key);
           }}
           items={[
@@ -69,18 +83,20 @@ function HOVIA_CONTENT_SIDEBAR(props) {
               label: titles[3],
             },
           ]}
+          style={{ backgroundColor: "white", width: "300px!important", maxWidth: "300px!important" }}
+
         />
       </Sider>
       <Content
         style={{
-          margin: "0px 20px",
+          margin: "0px 0px",
           padding: 24,
           minHeight: 280,
           background: colorBgContainer,
-          height: "80vh",
+          height: windowSize.innerWidth > 500 ? "80vh" : undefined,
         }}
       >
-        {contentDisplay(comp)}
+        {contentDisplay(component)}
       </Content>
       <Footer style={{ display: "none" }} />
     </Layout>
