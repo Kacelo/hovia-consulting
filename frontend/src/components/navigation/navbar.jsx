@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
@@ -145,10 +146,14 @@ function HoviaNavbar() {
                             <MapPin />
                           </Button>{" "}
                           <p style={{ margin: "0" }}>Address</p>
-                          <span style={{ margin: "0" }}>
+                          <a
+                            href="
+                                https://goo.gl/maps/9BR83JEoSV2kzcgaA"
+                            style={{ margin: "0" }}
+                          >
                             No. 96, Columbia Street, Dorado Park Ext. 1,
                             Windhoek
-                          </span>
+                          </a>
                         </div>
                       </li>
                     </Col>
@@ -188,13 +193,33 @@ function HoviaNavbar() {
             <Nav.Link href={ABOUT_US} style={{ margin: "0em" }}>
               About Us
             </Nav.Link>
-            <Nav.Link href={SERVICES.INDIVIDUALS} style={{ margin: "0em" }}>
-              Services
-            </Nav.Link>
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Services"
+              menuVariant="light"
+            >
+              <NavDropdown.Item href={SERVICES.INDIVIDUALS}>
+                {" "}
+                Individuals
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+
+              <NavDropdown.Item href={SERVICES.INSTITUTIONS}>
+                Institutions
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+
+              <NavDropdown.Item href={SERVICES.INTERNSHIPS}>
+                Internship program
+              </NavDropdown.Item>
+              {/* <NavDropdown.Item href="#action/3.4">
+                Institutions
+              </NavDropdown.Item> */}
+            </NavDropdown>
             <Nav.Link href="#link" style={{ margin: "0em" }}>
               Partners
             </Nav.Link>
-            <Nav.Link href="#link" style={{ margin: "0em" }}>
+            <Nav.Link href="#services" style={{ margin: "0em" }}>
               Contact Us
             </Nav.Link>
           </Nav>
@@ -316,10 +341,14 @@ function HoviaNavbar() {
                                   <MapPin />
                                 </Button>{" "}
                                 <p style={{ margin: "0" }}>Address</p>
-                                <span style={{ margin: "0" }}>
+                                <a
+                                  href="
+                                https://goo.gl/maps/9BR83JEoSV2kzcgaA"
+                                  style={{ margin: "0" }}
+                                >
                                   No. 96, Columbia Street, Dorado Park Ext. 1,
                                   Windhoek
-                                </span>
+                                </a>
                               </div>
                             </li>
                           </Col>
