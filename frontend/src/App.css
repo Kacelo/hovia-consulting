@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #BDBDBD;
+  font-weight: bold;
 }
 
 .App-logo {
@@ -28,16 +30,89 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+main{
+  background-color: #ebeced
+}
+.ant-layout.ant-layout-has-sider.css-dev-only-do-not-override-1vtf12y{
+  background-color: #ebeced !important
+
+}
+.nav-item{
+  margin: "0 2em"
+}
 
 .App-link {
   color: #61dafb;
 }
-
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.nav-bar{
+  /* background-color: #7BB601 !important; */
+  /* color: white !important; */
+}
+.nav-link{
+  /* color: white !important; */
+}
+.ant-layout-sider-children{
+  /* width: 120%; */
+}
+.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-below {
+  background-color: #B3CF32 !important;
+}
+.list-group-item{
+  background-color:  #9cbf2d !important;
+  color: #403f3f !important;
+}
+.top-links{
+  color: white !important;
+}
+.top-links:hover{
+  color: #0E5B96 !important;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.ant-menu-title-content{
+  /* color: #808080; */
+}
+.get-to-know-us-heading{
+  font-weight: 900;
+}
+.team-heading{
+  color:  #9cbf2d !important;
+  font-size: 60px;
+  font-weight: bolder;
+
+}
+.about-us-heading{
+  font-size: 60px;
+  font-weight: bolder;
+  opacity: 80%;
+  color:  #9cbf2d !important;
+  /* margin-bottom: 2em; */
+  /* margin-top: -2em; */
+
+}
+:where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light .ant-menu-item-selected, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu .ant-menu-item-selected{
+  color: #808080;
+}
+.services-btn.btn.btn-primary{
+  background-color: #B3CF32 !important;
+  border-color:#B3CF32 !important;
+}
+.services-btn.btn.btn-primary:hover{
+  background-color: #808080 !important;
+  border-color:#808080 !important;
+
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 50px;
   }
 }

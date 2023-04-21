@@ -22,15 +22,30 @@ function AboutUs() {
   }
   return (
     <div style={{ margin: "0 0" }}>
-      <div style={{ position: "relative" }}>
+    
+      {/* <Row
+        xs={1}
+        // md={2}
+        className="g-4"
+        style={{ margin: windowSize.innerWidth > 1400 ? "0 300px" : "0 20px" }}
+      >
+        <Col>
+        </Col>
+      </Row> */}
+      <Row
+        style={{ margin: windowSize.innerWidth > 1500 ? "2em 200px" : "0 20px" }}
+      >
+        <Col sm={12} lg={6}>
+        {/* <div style={{ position: "relative" }}> */}
         <div className="about-us-image">
-          <img
-            src="https://www.selloinstitute.co.za/wp-content/uploads/2020/04/titleBG.jpg"
-            alt=""
-            style={{ width: "100%" }}
+        <img
+            // width="240"
+            // height="830"
+            style={{ mixBlendMode: "darken", width: "100%" }}
+            src={require("/home/vernon/Desktop/hovia/hovia-consulting/frontend/src/assets/about-us/img2.png")}
           ></img>
         </div>
-        <div
+        {/* <div
           className="about-us-wording"
           style={{
             position: "absolute",
@@ -40,22 +55,15 @@ function AboutUs() {
             transform: " translate(-50%, -50%)",
           }}
         >
-          <h1>ABOUT US</h1>
-        </div>
-      </div>
-      <Row
-        xs={1}
-        // md={2}
-        className="g-4"
-        style={{ margin: windowSize.innerWidth > 1400 ? "0 300px" : "0 20px" }}
-      >
-        <Col></Col>
-      </Row>
-      <Row
-        style={{ margin: windowSize.innerWidth > 1400 ? "2em 200px" : "0 20px" }}
-      >
-        <Col sm={12} lg={6}>
-          <div style={{ textAlign: "initial" }}>
+          <h1 className="about-us-heading">ABOUT US</h1>
+        </div> */}
+      {/* </div> */}
+        </Col>
+        <Col sm={12} lg={6} md={12}>
+          <div className="about-us">
+          <h1 className="about-us-heading" style={{ marginTop: windowSize.innerWidth <992 ? "" : "2em"}}>GET TO KNOW US</h1>
+          </div>
+        <div style={{ textAlign: "initial", marginTop: windowSize.innerWidth <992 ? "" : "0" }}>
             <div>
               <h2>Who we are...</h2>
             </div>
@@ -67,8 +75,6 @@ function AboutUs() {
               Training and Education Quality Assurance Services, among other.
             </p>
           </div>
-        </Col>
-        <Col sm={12} lg={6} md={12}>
           <div>
             <ListGroup
               horizontal={
@@ -82,7 +88,7 @@ function AboutUs() {
                 style={{ borderStyle: "none", width: "100%" }}
                 md={4}
               >
-                <h5>OUR VISION</h5>
+                <h5 className="get-to-know-us-heading">OUR VISION</h5>
                 <div style={{ textAlign: "initial" }}>
                   To be the preferred educational consultant, empowering
                   academic professionals through our consulting and training
@@ -94,7 +100,7 @@ function AboutUs() {
                 md={4}
               >
                 {" "}
-                <h5>OUR MISSION</h5>
+                <h5 className="get-to-know-us-heading">OUR MISSION</h5>
                 <div style={{ textAlign: "initial" }}>
                   In our Training and Consulting Services we continuously
                   striving to apply best practices in the Competency- Education
@@ -108,7 +114,7 @@ function AboutUs() {
                 md={4}
               >
                 {" "}
-                <h5>OUR VALUES</h5>
+                <h5 className="get-to-know-us-heading">OUR VALUES</h5>
                 <div style={{ textAlign: "initial" }}>
                   Transparency, Personal Accountability, Teamwork, Integrity,
                   and Relevance.

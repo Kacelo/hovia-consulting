@@ -25,7 +25,7 @@ function HOVIA_CONTENT_SIDEBAR(props) {
   }, []);
   function getWindowSize() {
     const { innerWidth, innerHeight } = window;
-    console.log(innerWidth)
+    console.log(innerWidth);
     return { innerWidth, innerHeight };
   }
   const {
@@ -51,9 +51,12 @@ function HOVIA_CONTENT_SIDEBAR(props) {
           console.log(broken);
         }}
         onCollapse={(collapsed, type) => {
+          setCollapsed(collapsed);
           console.log(collapsed, type);
         }}
-        style={{ backgroundColor: "white", width: "300px!important", maxWidth: "300px!important" }}
+        style={{
+          backgroundColor: "#B3CF32",
+        }}
       >
         <div className="logo" />
 
@@ -83,17 +86,20 @@ function HOVIA_CONTENT_SIDEBAR(props) {
               label: titles[3],
             },
           ]}
-          style={{ backgroundColor: "white", width: "300px!important", maxWidth: "300px!important" }}
-
+          style={{
+            backgroundColor: "#B3CF32",
+            color: "white",
+          }}
         />
       </Sider>
       <Content
         style={{
-          margin: "0px 0px",
+          margin: "0px 20px 0 20px",
           padding: 24,
-          minHeight: 280,
+          minHeight: "80vh",
           background: colorBgContainer,
-          height: windowSize.innerWidth > 500 ? "80vh" : undefined,
+          // height: windowSize.innerWidth > 500 ? "80vh" : undefined,
+          maxHeight: "280vh",
         }}
       >
         {contentDisplay(component)}

@@ -26,7 +26,7 @@ function Institutions() {
         <Row
           xs={1}
           // md={2}
-          className="g-4"
+          // className="g-4"
           style={{
             margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
           }}
@@ -41,7 +41,7 @@ function Institutions() {
         <Row
           xs={1}
           // md={2}
-          className="g-4"
+          // className="g-4"
           style={{
             margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
           }}
@@ -111,7 +111,7 @@ function Institutions() {
         <Row
           xs={1}
           // md={2}
-          className="g-4"
+          // className="g-4"
           style={{
             margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
           }}
@@ -141,7 +141,7 @@ function Institutions() {
         <Row
           xs={1}
           // md={2}
-          className="g-4"
+          // className="g-4"
           style={{
             margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
           }}
@@ -192,7 +192,7 @@ function Institutions() {
         <Row
           xs={1}
           // md={2}
-          className="g-4"
+          // className="g-4"
           style={{
             margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
           }}
@@ -227,7 +227,7 @@ function Institutions() {
         <Row
           xs={1}
           // md={2}
-          className="g-4"
+          // className="g-4"
           style={{
             margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
           }}
@@ -236,9 +236,7 @@ function Institutions() {
           <Col style={{ textAlign: "initial" }}>
             <h5>we do</h5>
             <div>
-              <p>
-                <b>1. Change Management Training</b>
-              </p>
+             
               <ListGroup
                 horizontal={
                   windowSize.innerWidth > 700 && windowSize.innerWidth < 990
@@ -252,45 +250,50 @@ function Institutions() {
                   style={{ borderStyle: "none", width: "100%" }}
                   md={4}
                 >
-                  • Attract & Sourcing Talent (Candidates) for Hiring
+                  <b>1. Change Management Training</b>
+                </ListGroup.Item>
+
+                <ListGroup.Item
+                  style={{ borderStyle: "none", width: "100%" }}
+                  md={4}
+                >
+                  • The skills to plan for, implement, and sustain change within
+                  an organisation, with your own change management strategy for
+                  your specific context.
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{ borderStyle: "none", width: "100%" }}
                   md={4}
                 >
-                  • Personal Development Training – CV Writing, Interview Prep,
-                  Psychometric Assessments
+                  • The ability to determine a case for change and articulate
+                  the need for transition to stakeholders.
                 </ListGroup.Item>
                 <ListGroup.Item
                   style={{ borderStyle: "none", width: "100%" }}
                   md={4}
                 >
-                  • Fill Skills Gap & Promote Career Growth
+                  • Knowledge of the change cycle, communication and conflict
+                  management skills, and a number of change management
+                  strategies and models.
+                </ListGroup.Item>
+                <ListGroup.Item
+                  style={{ borderStyle: "none", width: "100%" }}
+                  md={4}
+                >
+                  • The tools to build enterprise change competency and
+                  effectiveness.
+                </ListGroup.Item>
+                <ListGroup.Item
+                  style={{ borderStyle: "none", width: "100%" }}
+                  md={4}
+                >
+                  <b>
+                    2. Transition / Transformation Facilitation Change
+                    Implementation
+                  </b>
                 </ListGroup.Item>
               </ListGroup>
-              <ListGroup
-                horizontal={
-                  windowSize.innerWidth > 700 && windowSize.innerWidth < 990
-                    ? true
-                    : false
-                }
-                style={{ textAlign: "initial" }}
-                as="ol"
-              >
-                <ListGroup.Item
-                  style={{ borderStyle: "none", width: "100%" }}
-                  md={4}
-                >
-                  • Transition / Transformation Facilitation Change
-                  Implementation{" "}
-                </ListGroup.Item>
-              </ListGroup>
-              <p>
-                <b>
-                  2. Transition / Transformation Facilitation Change
-                  Implementation
-                </b>
-              </p>
+              <p></p>
             </div>
           </Col>
         </Row>{" "}
@@ -303,7 +306,7 @@ function Institutions() {
         <Row
           xs={1}
           // md={2}
-          className="g-4"
+          // className="g-4"
           style={{
             margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
           }}
@@ -328,7 +331,7 @@ function Institutions() {
         <Row
           xs={1}
           // md={2}
-          className="g-4"
+          // className="g-4"
           style={{
             margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
           }}
@@ -391,19 +394,26 @@ function Institutions() {
     <div style={{ margin: "5em 0" }}>
       <Row>
         <Col>
-          <h1>SERVICES FOR INSTITUTIONS</h1>
+          <h1
+            style={{
+              fontSize: windowSize.innerWidth < 460 ? "3em" : "5em",
+              fontWeight: "bolder",
+            }}
+          >
+            SERVICES FOR INSTITUTIONS
+          </h1>
         </Col>
       </Row>
       <Row
         xs={1}
         // md={2}
-        className="g-4"
+        // className="g-4"
         style={{
           margin: windowSize.innerWidth > 1400 ? "2em 300px" : "2em 20px",
         }}
       >
         {" "}
-        <Col style={{ textAlign: "initial" }}>
+        <Col style={{ textAlign: "" }}>
           We help institutions / companies thrive in their business operations,
           to achieve optimal efficiency and productivity with our customized
           services, while focusing on their end goal.
