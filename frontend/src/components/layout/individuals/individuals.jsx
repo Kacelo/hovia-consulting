@@ -465,17 +465,26 @@ function Individuals() {
     <div style={{ margin: "5em 0" }}>
       <Row>
         <Col>
-          <h1>SERVICES FOR INDIVIDUALS</h1>
+          <h1
+            style={{
+              fontSize: windowSize.innerWidth < 460 ? "4em" : "5em",
+              fontWeight: "bolder",
+            }}
+          >
+            SERVICES FOR INDIVIDUALS
+          </h1>
         </Col>
       </Row>
       <Row
         xs={1}
         // md={2}
         className="g-4"
-        style={{ margin: windowSize.innerWidth > 1400 ? "2em 300px" : "2em 20px" }}
+        style={{
+          margin: windowSize.innerWidth > 1400 ? "2em 300px" : "2em 20px",
+        }}
       >
         {" "}
-        <Col style={{ textAlign: "initial" }}>
+        <Col style={{ textAlign: "" }}>
           Preparing individuals, learners and students with the essential skills
           for the future requires all Educators to create a collaborative
           culture for learning that sparks curiosity and creativity. We explore

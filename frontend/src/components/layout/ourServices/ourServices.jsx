@@ -24,7 +24,7 @@ function OurServices() {
   }, []);
   function getWindowSize() {
     const { innerWidth, innerHeight } = window;
-    console.log(innerWidth)
+    console.log(innerWidth);
     return { innerWidth, innerHeight };
   }
   // const route = useHistory();
@@ -34,8 +34,13 @@ function OurServices() {
     });
   const { SERVICES } = ROUTESLIST;
   return (
-    <div style={{ margin: "15em 0" }}>
-      <h1>OUR SERVICES</h1>
+    <div
+      style={{ margin: "15em 0", backgroundColor: "#B3CF32", padding: "4em 0" }}
+      className="services"
+    >
+      <h1 style={{ color: "white", fontWeight: "900", fontSize: "60px" }}>
+        OUR SERVICES
+      </h1>
       <Row
         xs={1}
         md={2}
@@ -68,15 +73,11 @@ function OurServices() {
               }}
             >
               {" "}
-
-            <Nav.Link href={SERVICES.INDIVIDUALS} style={{ margin: "0em" }}>
-            <Button
-                variant="primary"
-              >
-                READ MORE
-              </Button>{" "}
-            </Nav.Link>
-             
+              <Nav.Link href={SERVICES.INDIVIDUALS} style={{ margin: "0em" }}>
+                <Button variant="primary" className="services-btn">
+                  READ MORE
+                </Button>{" "}
+              </Nav.Link>
             </Card.Footer>{" "}
           </Card>
         </Col>
@@ -104,7 +105,11 @@ function OurServices() {
               }}
             >
               {" "}
-              <Button variant="primary">READ MORE</Button>{" "}
+              <Nav.Link href={SERVICES.INSTITUTIONS} style={{ margin: "0em" }}>
+                <Button variant="primary" className="services-btn">
+                  READ MORE
+                </Button>{" "}
+              </Nav.Link>{" "}
             </Card.Footer>{" "}
           </Card>
         </Col>
@@ -136,7 +141,9 @@ function OurServices() {
               }}
             >
               {" "}
-              <Button variant="primary">APPLY NOW</Button>{" "}
+              <Button variant="primary" className="services-btn">
+                APPLY NOW
+              </Button>{" "}
             </Card.Footer>
           </Card>
         </Col>

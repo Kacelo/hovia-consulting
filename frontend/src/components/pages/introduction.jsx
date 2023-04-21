@@ -26,8 +26,8 @@ function Introduction() {
           textAlign: "initial",
         }}
       >
-        <Col sm={12} lg={6} style={{ padding: "0 1em" }}>
-          <h2>HOVIA EDUCATIONAL CONSULTANTS (HEC)</h2>
+        <Col sm={12} lg={12} md={12} style={{ padding:windowSize.innerWidth > 792 ? "1em 17em" : "0" }}>
+          <h2 style={{fontSize: windowSize.innerWidth > 1024 ? "5em" : ""}}>HOVIA EDUCATIONAL CONSULTANTS (HEC)</h2>
           <p>
             HOVIA is the first ever (pioneer) educational consultancy 100%
             privately-owned by a black female entrepreneur, focusing on Talent
@@ -37,7 +37,13 @@ function Introduction() {
             Learning.
           </p>
         </Col>
-        <Col sm={12} lg={6}></Col>
+        {/* <Col sm={12} lg={7} md={7}>
+          <img
+            src="https://robbreport.com/wp-content/uploads/2018/08/ceolady.jpg?w=1000"
+            style={{ width: "100%" }}
+          ></img>
+ 
+        </Col> */}
       </Row>
     </div>
   );
