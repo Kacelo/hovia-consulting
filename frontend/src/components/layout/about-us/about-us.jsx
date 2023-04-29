@@ -42,7 +42,9 @@ function AboutUs() {
             // width="240"
             // height="830"
             style={{ mixBlendMode: "darken", width: "100%" }}
-            src={require("/home/vernon/Desktop/hovia/hovia-consulting/frontend/src/assets/about-us/img2.png")}
+            // src={require("../frontend/src/assets/about-us/img2.png")}
+            src={require("../../../assets/about-us/img2.png")}
+
           ></img>
         </div>
         {/* <div
