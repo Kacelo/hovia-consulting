@@ -265,7 +265,7 @@ function HoviaNavbar() {
               OUR PARTNERS
             </Nav.Link> */}
             <Nav.Link
-              href="#services"
+              href={CONTACT_US}
               style={{ margin: "0em 1em" }}
               className="nav-link"
             >
