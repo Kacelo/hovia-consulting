@@ -205,7 +205,7 @@ function HoviaNavbar() {
             width="240"
             height="130"
             style={{ mixBlendMode: "darken" }}
-            src={require("/home/vernon/Desktop/hovia/hovia-consulting/frontend/src/assets/logo/logo2.jpeg")}
+            src={require("../../assets/logo/logo2.jpeg")}
           ></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
