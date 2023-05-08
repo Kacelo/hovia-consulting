@@ -24,8 +24,6 @@ function HoviaCarousel() {
               width: "50%",
             }}
           >
-            {/* <h4 style={{ opacity: "100%" }}>Nature</h4>
-            <p>What a beautiful sunrise</p> */}
           </div>
         </Carousel.Item>
         <Carousel.Item style={{ maxHeight: "850px" }}>
@@ -47,8 +45,6 @@ function HoviaCarousel() {
               width: "50%",
             }}
           >
-            {/* <h4>Nature</h4>
-            <p>What a beautiful sunrise</p> */}
           </div>
         </Carousel.Item>
         <Carousel.Item style={{ maxHeight: "850px" }}>
@@ -70,8 +66,6 @@ function HoviaCarousel() {
               width: "50%",
             }}
           >
-            {/* <h4>Nature</h4>
-            <p>What a beautiful sunrise</p> */}
           </div>
         </Carousel.Item>
       </Carousel>

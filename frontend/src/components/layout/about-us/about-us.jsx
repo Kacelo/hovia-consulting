@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import ListGroup from "react-bootstrap/ListGroup";
@@ -30,8 +29,6 @@ function AboutUs() {
         <Col sm={12} lg={6}>
           <div className="about-us-image">
             <img
-              // width="240"
-              // height="830"
               style={{ mixBlendMode: "darken", width: "100%" }}
               src={require("../../../assets/about-us/img2.png")}
             ></img>

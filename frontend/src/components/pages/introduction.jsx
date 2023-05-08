@@ -37,13 +37,6 @@ function Introduction() {
             Learning.
           </p>
         </Col>
-        {/* <Col sm={12} lg={7} md={7}>
-          <img
-            src="https://robbreport.com/wp-content/uploads/2018/08/ceolady.jpg?w=1000"
-            style={{ width: "100%" }}
-          ></img>
- 
-        </Col> */}
       </Row>
     </div>
   );
