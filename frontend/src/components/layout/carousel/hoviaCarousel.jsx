@@ -7,7 +7,7 @@ function HoviaCarousel() {
       <Carousel fade>
         <Carousel.Item style={{ maxHeight: "850px" }}>
           <img
-            src={require("/home/vernon/Desktop/hovia/hovia-consulting/frontend/src/assets/sample-images/2.png")}
+            src={require("../../../assets/sample-images/2.png")}
             style={{ maxHeight: "850px" }}
             className="d-block w-100 h-50"
           ></img>
@@ -30,7 +30,7 @@ function HoviaCarousel() {
         </Carousel.Item>
         <Carousel.Item style={{ maxHeight: "850px" }}>
           <img
-            src={require("/home/vernon/Desktop/hovia/hovia-consulting/frontend/src/assets/sample-images/2.png")}
+            src={require("../../../assets/sample-images/2.png")}
             style={{ maxHeight: "850px" }}
             className="d-block w-100 h-50"
           ></img>
@@ -53,7 +53,7 @@ function HoviaCarousel() {
         </Carousel.Item>
         <Carousel.Item style={{ maxHeight: "850px" }}>
           <img
-            src={require("/home/vernon/Desktop/hovia/hovia-consulting/frontend/src/assets/sample-images/1.png")}
+            src={require("../../../assets/sample-images/1.png")}
             style={{ maxHeight: "850px" }}
             className="d-block w-100 h-50"
           ></img>
