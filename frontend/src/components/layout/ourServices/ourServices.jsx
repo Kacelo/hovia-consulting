@@ -6,9 +6,7 @@ import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 import Individuals from "../individuals/individuals";
-import { history } from "../../../helpers";
 import { ROUTESLIST } from "../../../configs/routes.dictionary";
-import { useHistory } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 
 function OurServices() {
@@ -26,11 +24,6 @@ function OurServices() {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
   }
-  // const route = useHistory();
-  const navigate = (path) =>
-    history.push({
-      pathname: path,
-    });
   const { SERVICES } = ROUTESLIST;
   return (
     <div

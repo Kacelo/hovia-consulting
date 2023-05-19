@@ -18,17 +18,14 @@ function App() {
           <HoviaNavbar />
           <Content>
             <Routes>
-              {/* <Route path="/" element={<Layout />}> */}
               <Route path={HOME} element={<Home />} />
               <Route path={ABOUT_US} element={<AboutUs />} />
               <Route path={SERVICES.INDIVIDUALS} element={<Individuals />} />
               <Route path={SERVICES.INSTITUTIONS} element={<Institutions />} />
               <Route path={CONTACT_US} element={<ContactUs />} />
-              {/* </Route> */}
             </Routes>
           </Content>
         </Layout>
-        {/* <Home /> */}
       </BrowserRouter>
     </div>
   );

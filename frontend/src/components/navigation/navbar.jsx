@@ -63,12 +63,10 @@ function HoviaNavbar() {
                           }}
                         >
                           <Button
-                            // variant="blue "
                             style={{
                               width: "50px",
                               height: "50px",
                               position: "absolute",
-                              // top: "50%",
                               left: "0",
                               textAlign: "center",
                               backgroundColor: "#BDBDBD",
@@ -108,11 +106,9 @@ function HoviaNavbar() {
                               width: "50px",
                               height: "50px",
                               position: "absolute",
-                              // top: "50%",
                               left: "0",
                               textAlign: "center",
                               zIndex: "1",
-                              //   margin: "2em"
                               backgroundColor: "#BDBDBD",
                               borderColor: "#BDBDBD",
                             }}
@@ -155,7 +151,6 @@ function HoviaNavbar() {
                               width: "50px",
                               height: "50px",
                               position: "absolute",
-                              // top: "50%",
                               left: "0",
                               textAlign: "center",
                               borderColor: "#BDBDBD",
@@ -196,7 +191,6 @@ function HoviaNavbar() {
         style={{
           textAlign: "center",
           padding: "0em 1em",
-          // backgroundColor: "#7BB601 !important",
           color: "white",
         }}
         className="nav-bar"
@@ -216,7 +210,6 @@ function HoviaNavbar() {
             style={{
               textAlign: "initial",
               display: "flex",
-              // justifyContent: "space-between",
             }}
           >
             <Nav.Link
@@ -254,17 +247,9 @@ function HoviaNavbar() {
               <NavDropdown.Item href={SERVICES.INTERNSHIPS}>
                 INTERNSHIP PROGRAM{" "}
               </NavDropdown.Item>
-              {/* <NavDropdown.Item href="#action/3.4">
-                Institutions
-              </NavDropdown.Item> */}
+
             </NavDropdown>
-            {/* <Nav.Link
-              href="#link"
-              style={{ margin: "0em 1em" }}
-              className="nav-link"
-            >
-              OUR PARTNERS
-            </Nav.Link> */}
+
             <Nav.Link
               href={CONTACT_US}
               style={{ margin: "0em 1em" }}
