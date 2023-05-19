@@ -23,24 +23,35 @@ function AboutUs() {
   return (
     <div style={{ margin: "0 0" }}>
       <Row
-        style={{ margin: windowSize.innerWidth > 1500 ? "2em 200px" : "0 20px" }}
+        style={{
+          margin: windowSize.innerWidth > 1500 ? "2em 200px" : "0 20px",
+        }}
       >
         <Col sm={12} lg={6}>
-        <div className="about-us-image">
-        <img
-            // width="240"
-            // height="830"
-            style={{ mixBlendMode: "darken", width: "100%" }}
-            src={require("../../../assets/about-us/img2.png")}
-          ></img>
-        </div>
-    
+          <div className="about-us-image">
+            <img
+              // width="240"
+              // height="830"
+              style={{ mixBlendMode: "darken", width: "100%" }}
+              src={require("../../../assets/about-us/img2.png")}
+            ></img>
+          </div>
         </Col>
         <Col sm={12} lg={6} md={12}>
           <div className="about-us">
-          <h1 className="about-us-heading" style={{ marginTop: windowSize.innerWidth <992 ? "" : "2em"}}>GET TO KNOW US</h1>
+            <h1
+              className="about-us-heading"
+              style={{ marginTop: windowSize.innerWidth < 992 ? "" : "2em" }}
+            >
+              GET TO KNOW US
+            </h1>
           </div>
-        <div style={{ textAlign: "initial", marginTop: windowSize.innerWidth <992 ? "" : "0" }}>
+          <div
+            style={{
+              textAlign: "initial",
+              marginTop: windowSize.innerWidth < 992 ? "" : "0",
+            }}
+          >
             <div>
               <h2>Who we are...</h2>
             </div>
