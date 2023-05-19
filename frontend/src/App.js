@@ -7,6 +7,7 @@ import { ROUTESLIST } from "./configs";
 import { Layout } from "antd";
 import Individuals from "./components/layout/individuals/individuals";
 import Institutions from "./components/layout/institutions/institutions";
+import ContactUs from "./components/contact-us/contact-us";
 const { Content } = Layout;
 const { ABOUT_US, HOME, CONTACT_US, SERVICES } = ROUTESLIST;
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Route path={ABOUT_US} element={<AboutUs />} />
               <Route path={SERVICES.INDIVIDUALS} element={<Individuals />} />
               <Route path={SERVICES.INSTITUTIONS} element={<Institutions />} />
+              <Route path={CONTACT_US} element={<ContactUs />} />
             </Routes>
           </Content>
         </Layout>

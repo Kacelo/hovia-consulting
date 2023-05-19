@@ -22,7 +22,6 @@ function OurServices() {
   }, []);
   function getWindowSize() {
     const { innerWidth, innerHeight } = window;
-    console.log(innerWidth);
     return { innerWidth, innerHeight };
   }
   const { SERVICES } = ROUTESLIST;
