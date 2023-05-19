@@ -22,8 +22,8 @@ function ContactUs() {
     return { innerWidth, innerHeight };
   }
   return (
-    <div style={{ height: "100vh" }}>
-      <Row style={{ margin: "50px 0" }} xs={1} md={2}>
+    <div >
+      <Row style={{ margin: "50px 0" }} xs={1} md={1} lg={2}>
         <Col>
           <Image
             alt="woman on phone"
@@ -33,8 +33,20 @@ function ContactUs() {
         </Col>
         <Col>
           <div className="container">
-            <div style={{ textAlign: "initial" }}>
-              <h1 style={{ fontSize: "90px", fontWeight: "900" }}>
+            <div
+              style={
+                windowSize.innerWidth > MOBILE
+                  ? { textAlign: "center" }
+                  : { textAlign: "center" }
+              }
+            >
+              <h1
+                style={
+                  windowSize.innerWidth > MOBILE
+                    ? { fontSize: "90px", fontWeight: "900" }
+                    : { fontSize: "50px", fontWeight: "900" }
+                }
+              >
                 CONTACT US
               </h1>
             </div>

@@ -76,7 +76,7 @@ function HoviaNavbar() {
                             }}
                             href="tel:061 221 463"
                           >
-                            <Phone />{" "}
+                            <Phone className="nav-icon"/>{" "}
                           </Button>{" "}
                           <p style={{ margin: "0" }}>Call Us</p>
                           <a href="tel:061 221 463" className="top-links">
@@ -118,7 +118,7 @@ function HoviaNavbar() {
                             }}
                             href="mailto:hoviaconsult@iway.na"
                           >
-                            <Mail />
+                            <Mail className="nav-icon"/>
                           </Button>{" "}
                           <div>
                             <p style={{ margin: "0" }}>Email Address</p>
@@ -159,11 +159,12 @@ function HoviaNavbar() {
                               left: "0",
                               textAlign: "center",
                               borderColor: "#BDBDBD",
+                              backgroundColor: "#BDBDBD",
                             }}
                             href="
                             https://goo.gl/maps/9BR83JEoSV2kzcgaA"
                           >
-                            <MapPin />
+                            <MapPin className="nav-icon"/>
                           </Button>{" "}
                           <p style={{ margin: "0" }}>Address</p>
                           <a
@@ -205,7 +206,7 @@ function HoviaNavbar() {
             width="240"
             height="130"
             style={{ mixBlendMode: "darken" }}
-            src={require("/home/vernon/Desktop/hovia/hovia-consulting/frontend/src/assets/logo/logo2.jpeg")}
+            src={require("../../assets/logo/logo2.jpeg")}
           ></img>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -311,7 +312,7 @@ function HoviaNavbar() {
                                   }}
                                   href="tel:061 221 463"
                                 >
-                                  <Phone />{" "}
+                                  <Phone className="nav-icon"/>{" "}
                                 </Button>{" "}
                                 <p style={{ margin: "0", color: "gray" }}>Call Us</p>
                                 <a href="tel:061 221 463" className="top-links-mobile">
@@ -351,7 +352,7 @@ function HoviaNavbar() {
                                   }}
                                   href="mailto:hoviaconsult@iway.na"
                                 >
-                                  <Mail />
+                                  <Mail className="nav-icon"/>
                                 </Button>{" "}
                                 <div>
                                   <p style={{ margin: "0", color: "gray" }}>Email Address</p>
@@ -395,9 +396,9 @@ function HoviaNavbar() {
                                   href="
                                   https://goo.gl/maps/9BR83JEoSV2kzcgaA"
                                 >
-                                  <MapPin />
+                                  <MapPin className="nav-icon"/>
                                 </Button>{" "}
-                                <p style={{ margin: "0" , color: "gray"}}>Address</p>
+                                <p style={{ margin: "0" , color: ""}}>Address</p>
                                 <a
                                   href="
                                 https://goo.gl/maps/9BR83JEoSV2kzcgaA"

@@ -22,42 +22,19 @@ function AboutUs() {
   }
   return (
     <div style={{ margin: "0 0" }}>
-    
-      {/* <Row
-        xs={1}
-        // md={2}
-        className="g-4"
-        style={{ margin: windowSize.innerWidth > 1400 ? "0 300px" : "0 20px" }}
-      >
-        <Col>
-        </Col>
-      </Row> */}
       <Row
         style={{ margin: windowSize.innerWidth > 1500 ? "2em 200px" : "0 20px" }}
       >
         <Col sm={12} lg={6}>
-        {/* <div style={{ position: "relative" }}> */}
         <div className="about-us-image">
         <img
             // width="240"
             // height="830"
             style={{ mixBlendMode: "darken", width: "100%" }}
-            src={require("/home/vernon/Desktop/hovia/hovia-consulting/frontend/src/assets/about-us/img2.png")}
+            src={require("../../../assets/about-us/img2.png")}
           ></img>
         </div>
-        {/* <div
-          className="about-us-wording"
-          style={{
-            position: "absolute",
-            top: " 50%",
-            left: "50%",
-            color: "white",
-            transform: " translate(-50%, -50%)",
-          }}
-        >
-          <h1 className="about-us-heading">ABOUT US</h1>
-        </div> */}
-      {/* </div> */}
+    
         </Col>
         <Col sm={12} lg={6} md={12}>
           <div className="about-us">

@@ -25,7 +25,6 @@ function HOVIA_CONTENT_SIDEBAR(props) {
   }, []);
   function getWindowSize() {
     const { innerWidth, innerHeight } = window;
-    console.log(innerWidth);
     return { innerWidth, innerHeight };
   }
   const {
@@ -66,7 +65,6 @@ function HOVIA_CONTENT_SIDEBAR(props) {
           defaultSelectedKeys={["1"]}
           onClick={({ key }) => {
             setComponent(key);
-            console.log(key);
           }}
           items={[
             {
