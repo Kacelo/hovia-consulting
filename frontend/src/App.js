@@ -8,8 +8,9 @@ import { Layout } from "antd";
 import Individuals from "./components/layout/individuals/individuals";
 import Institutions from "./components/layout/institutions/institutions";
 import ContactUs from "./components/contact-us/contact-us";
+import Internship from "./components/layout/internship-program/internship";
 const { Content } = Layout;
-const { ABOUT_US, HOME, CONTACT_US, SERVICES } = ROUTESLIST;
+const { ABOUT_US, HOME, CONTACT_US, SERVICES, INTERNSHIPS } = ROUTESLIST;
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,8 @@ function App() {
               <Route path={SERVICES.INDIVIDUALS} element={<Individuals />} />
               <Route path={SERVICES.INSTITUTIONS} element={<Institutions />} />
               <Route path={CONTACT_US} element={<ContactUs />} />
+              <Route path={SERVICES.INTERNSHIPS} element={<Internship />} />
+
             </Routes>
           </Content>
         </Layout>
