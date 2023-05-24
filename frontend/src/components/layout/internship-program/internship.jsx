@@ -25,7 +25,7 @@ function Internship() {
                   style={{ fontSize: "max(0.75rem, 42.3%)" }}
                 >
                   <p className="" style={{ whiteSpace: "pre-wrap" }}>
-                    Intern with us
+                   INTERN WITH US
                   </p>
                 </div>
               </div>
@@ -36,7 +36,7 @@ function Internship() {
           <Col>
             <div className="description">
               <div className="big-text">
-                <h3 className="openning-text">
+                <h3 className="services-description">
                   Our Internship Programme aims to groom and empower final year
                   college individuals and young professionals in their
                   respective field of study and develop their potential in

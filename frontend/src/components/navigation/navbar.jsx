@@ -181,10 +181,6 @@ function HoviaNavbar() {
           </div>
         </div>
       )}
-      <Row>H
-        <Col></Col>
-        <Col></Col>
-      </Row>
       <Navbar
         // bg="light"
         expand="lg"
@@ -231,18 +227,16 @@ function HoviaNavbar() {
               title="SERVICES"
               menuVariant="light"
               renderMenuOnMount={true}
-              style={{ margin: "0em 1em" }}
+              style={{ margin: "0em 1em", color: "#525252" }}
             >
               <NavDropdown.Item href={SERVICES.INDIVIDUALS}>
                 {" "}
                 INDIVIDUALS
               </NavDropdown.Item>
-              <NavDropdown.Divider />
 
               <NavDropdown.Item href={SERVICES.INSTITUTIONS}>
                 INSTITUTIONS
               </NavDropdown.Item>
-              <NavDropdown.Divider />
 
               <NavDropdown.Item href={SERVICES.INTERNSHIPS}>
                 INTERNSHIP PROGRAM{" "}

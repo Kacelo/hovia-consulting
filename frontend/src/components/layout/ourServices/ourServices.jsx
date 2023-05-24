@@ -27,12 +27,16 @@ function OurServices() {
   const { SERVICES } = ROUTESLIST;
   return (
     <div
-      style={{ margin: "15em 0", backgroundColor: "#B3CF32", padding: "4em 0" }}
+      style={{ margin: "15em 0", backgroundColor: "", padding: "4em 0" }}
       className="services"
     >
-      <h1 style={{ color: "white", fontWeight: "900", fontSize: "60px" }}>
-        OUR SERVICES
-      </h1>
+      <div >
+        <h1 className="team-heading">
+          OUR SERVICES
+        </h1>
+      </div>
+      <hr></hr>
+
       <Row
         xs={1}
         md={2}
@@ -40,15 +44,15 @@ function OurServices() {
         style={{ margin: windowSize.innerWidth > 1720 ? "0 300px" : "0 20px" }}
       >
         <Col lg={4}>
-          <Card style={{ height: "100%" }}>
+          <Card style={{ height: "100%", borderStyle: "none" }}>
             <Card.Body>
-              <FontAwesomeIcon
-                icon={icon({ name: "user-graduate" })}
-                size="2xl"
-                style={{ padding: "1em" }}
+              <Card.Img
+                src={require("../../../assets/grad.jpg")}
+                alt="Card image"
+                style={{ borderRadius: "0", marginBottom: "2em" }}
               />
-              <Card.Title>FOR INDIVIDUALS</Card.Title>
-              <Card.Text style={{ textAlign: "initial", padding: "0 2em" }}>
+              <Card.Title className="" style={{ textAlign: "initial", padding: "0 " }}>FOR INDIVIDUALS</Card.Title>
+              <Card.Text style={{ textAlign: "initial", padding: "0 " }}>
                 Preparing individuals, learners and students with the essential
                 skills for the future requires all Educators to create a
                 collaborative culture for learning that sparks curiosity and
@@ -61,29 +65,29 @@ function OurServices() {
               style={{
                 borderTop: "none",
                 backgroundColor: "white",
-                padding: "2em",
+                padding: "1em",
               }}
             >
               {" "}
               <Nav.Link href={SERVICES.INDIVIDUALS} style={{ margin: "0em" }}>
                 <Button variant="primary" className="services-btn">
-                  READ MORE
+                  LEARN MORE
                 </Button>{" "}
               </Nav.Link>
             </Card.Footer>{" "}
           </Card>
         </Col>
         <Col lg={4}>
-          <Card style={{ height: "100%" }}>
+          <Card style={{ height: "100%", borderStyle: "none" }}>
             <Card.Body>
-              <FontAwesomeIcon
-                icon={icon({ name: "building-columns" })}
-                size="2xl"
-                style={{ padding: "1em" }}
+              <Card.Img
+                src={require("../../../assets/institution.jpg")}
+                alt="Card image"
+                style={{ borderRadius: "0", marginBottom: "2em" }}
               />
 
-              <Card.Title>FOR INSTITUTIONS</Card.Title>
-              <Card.Text style={{ textAlign: "initial", padding: "0 2em" }}>
+              <Card.Title style={{ textAlign: "initial", padding: "0 " }}>FOR INSTITUTIONS</Card.Title>
+              <Card.Text style={{ textAlign: "initial", padding: "0 " }}>
                 We help institutions / companies thrive in their business
                 operations, to achieve optimal efficiency and productivity with
                 our customized services, while focusing on their end goal.
@@ -93,28 +97,28 @@ function OurServices() {
               style={{
                 borderTop: "none",
                 backgroundColor: "white",
-                padding: "2em",
+                padding: "1em",
               }}
             >
               {" "}
               <Nav.Link href={SERVICES.INSTITUTIONS} style={{ margin: "0em" }}>
                 <Button variant="primary" className="services-btn">
-                  READ MORE
+                  LEARN MORE
                 </Button>{" "}
               </Nav.Link>{" "}
             </Card.Footer>{" "}
           </Card>
         </Col>
         <Col lg={4} sm={12}>
-          <Card style={{ height: "100%" }}>
+          <Card style={{ height: "100%", borderStyle: "none" }}>
             <Card.Body>
-              <FontAwesomeIcon
-                icon={icon({ name: "people-group" })}
-                size="2xl"
-                style={{ padding: "1em" }}
+              <Card.Img
+                src={require("../../../assets/intern2.jpg")}
+                alt="Card image"
+                style={{ borderRadius: "0", marginBottom: "2em" }}
               />
-              <Card.Title>INTERN PROGRAM</Card.Title>
-              <Card.Text style={{ textAlign: "initial", padding: "0 2em" }}>
+              <Card.Title style={{ textAlign: "initial", padding: "0 " }}>INTERN PROGRAM</Card.Title>
+              <Card.Text style={{ textAlign: "initial", padding: "0 " }}>
                 Our Internship Programme aims to groom and empowerment final
                 year college individuals and young professionals in their
                 respective field of study and develop their potential in
@@ -129,12 +133,12 @@ function OurServices() {
               style={{
                 borderTop: "none",
                 backgroundColor: "white",
-                padding: "2em",
+                padding: "1em",
               }}
             >
               {" "}
               <Button variant="primary" className="services-btn">
-                APPLY NOW
+                LEARN MORE
               </Button>{" "}
             </Card.Footer>
           </Card>

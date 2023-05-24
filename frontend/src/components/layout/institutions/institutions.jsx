@@ -32,7 +32,7 @@ function Institutions() {
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h2>TRAINING PROGRAMMES</h2>
+              <h2 className="services-headings">TRAINING PROGRAMMES</h2>
             </div>
           </Col>
         </Row>{" "}
@@ -45,13 +45,8 @@ function Institutions() {
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <h5>we do</h5>
-            <div>
+            <div className="">
               <ListGroup
-                horizontal={
-                  windowSize.innerWidth > 700 && windowSize.innerWidth < 990
-                    ? true
-                    : false
-                }
                 style={{ textAlign: "initial" }}
                 as="ol"
                 numbered
@@ -113,22 +108,26 @@ function Institutions() {
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h2>TALENT MANAGEMENT REFERRAL PROGRAMME (TMRP) </h2>
+              <h2 className="services-headings">
+                TALENT MANAGEMENT REFERRAL PROGRAMME (TMRP){" "}
+              </h2>
             </div>
-            <div>
-              The goal of our candidate referral system is to make inbound
-              referrals of more sustainable and more reliable source of
-              candidates. With administrative tasks off their plate, educational
-              leaders / hiring managers have more time to focus on becoming an
-              employer of choice, with our services. Having reliable, accurate
-              and timely data helps employers deliver on strategic talent
-              initiatives, like pay equity or workforce diversity, with
-              confidence. We source talent, assess skills and qualifications,
-              manage candidate strengths, match the right skills sets and
-              onboard / place right candidates with the right companies/
-              institutions. We attract, engage and retain talent through our
-              talent acquisition expertise, and avail the best talent to the
-              hiring team at the right time.
+            <div className="">
+              <p>
+                The goal of our candidate referral system is to make inbound
+                referrals of more sustainable and more reliable source of
+                candidates. With administrative tasks off their plate,
+                educational leaders / hiring managers have more time to focus on
+                becoming an employer of choice, with our services. Having
+                reliable, accurate and timely data helps employers deliver on
+                strategic talent initiatives, like pay equity or workforce
+                diversity, with confidence. We source talent, assess skills and
+                qualifications, manage candidate strengths, match the right
+                skills sets and onboard / place right candidates with the right
+                companies/ institutions. We attract, engage and retain talent
+                through our talent acquisition expertise, and avail the best
+                talent to the hiring team at the right time.
+              </p>
             </div>
           </Col>
         </Row>{" "}
@@ -140,8 +139,8 @@ function Institutions() {
         >
           {" "}
           <Col style={{ textAlign: "initial" }}>
-            <h5>we do</h5>
-            <div>
+            <h4>we do</h4>
+            <div className="">
               <ListGroup
                 horizontal={
                   windowSize.innerWidth > 700 && windowSize.innerWidth < 990
@@ -190,9 +189,9 @@ function Institutions() {
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h2>EDUCATION CHANGE MANAGEMENT</h2>
+              <h2 className="services-headings">EDUCATION CHANGE MANAGEMENT</h2>
             </div>
-            <div>
+            <div className="">
               When positive change is applied correctly, it helps to reduce
               waste and therefore reduce costs. Effective change management
               helps an organization make smart choices. It increases
@@ -206,7 +205,7 @@ function Institutions() {
               understanding of effective change management fundamental concepts
               and institutional benefits.
             </div>
-            <div>
+            <div className="">
               <p>
                 HEC will help you management change effectively in your
                 institution!
@@ -222,9 +221,8 @@ function Institutions() {
         >
           {" "}
           <Col style={{ textAlign: "initial" }}>
-            <h5>we do</h5>
-            <div>
-             
+            <h4>we do</h4>
+            <div className="">
               <ListGroup
                 horizontal={
                   windowSize.innerWidth > 700 && windowSize.innerWidth < 990
@@ -300,9 +298,11 @@ function Institutions() {
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h2>INSTITUTIONAL DATA MANAGEMENT</h2>
+              <h2 className="services-headings">
+                INSTITUTIONAL DATA MANAGEMENT
+              </h2>
             </div>
-            <div>
+            <div className="">
               HEC helps Institutions with Data collection, organizing,
               processing and analytics to support productivity, efficiency, and
               business decision-making with ease. With reliable, up-to-date
@@ -332,7 +332,7 @@ function Institutions() {
                 Lecturers, Principals, Teachers, SRCs, LRCs etc.
               </div> */}
             <h5>we do</h5>
-            <div>
+            <div className="">
               <ListGroup
                 horizontal={
                   windowSize.innerWidth > 700 && windowSize.innerWidth < 990
@@ -378,14 +378,30 @@ function Institutions() {
     <div style={{ margin: "5em 0" }}>
       <Row>
         <Col>
-          <h1
-            style={{
-              fontSize: windowSize.innerWidth < 460 ? "3em" : "5em",
-              fontWeight: "bolder",
-            }}
-          >
-            SERVICES FOR INSTITUTIONS
-          </h1>
+          <div className="image-container">
+            <img
+              style={{
+                mixBlendMode: "darken",
+                width: windowSize.innerWidth < 991 ? "100%" : "80%",
+              }}
+              src={require("../../../assets/institution.jpg")}
+            ></img>
+            <div
+              className="intern-caption"
+              style={{ fontSize: "12.5vw", textAlign: "center" }}
+            >
+              <div
+                className="image-title sqs-dynamic-text"
+                data-animation-override=""
+                data-width-percentage="42.3"
+                style={{ fontSize: "max(0.75rem, 42.3%)" }}
+              >
+                <p className="" style={{ whiteSpace: "" }}>
+                  INSTITUTIONS{" "}
+                </p>
+              </div>
+            </div>
+          </div>
         </Col>
       </Row>
       <Row
@@ -395,10 +411,12 @@ function Institutions() {
         }}
       >
         {" "}
-        <Col style={{ textAlign: "" }}>
-          We help institutions / companies thrive in their business operations,
-          to achieve optimal efficiency and productivity with our customized
-          services, while focusing on their end goal.
+        <Col style={{ textAlign: "" }} className="services-description">
+          <p>
+            We help institutions/companies thrive in their business operations,
+            to achieve optimal efficiency and productivity with our customized
+            services, while focusing on their end goal.
+          </p>
         </Col>
       </Row>
       <HOVIA_CONTENT_SIDEBAR contentArray={compArray} titles={titles} />

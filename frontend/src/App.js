@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Layout>
           <HoviaNavbar />
-          <Content>
+          <Content className="content">
             <Routes>
               <Route path={HOME} element={<Home />} />
               <Route path={ABOUT_US} element={<AboutUs />} />
