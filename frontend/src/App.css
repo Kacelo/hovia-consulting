@@ -1,12 +1,20 @@
 .App {
   text-align: center;
   background-color: #BDBDBD;
-  font-weight: bold;
+  /* font-weight: bold; */
+  
+}
+p{
+  
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.content{
+  background-color: #fff;
+  margin: 0 2em;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -31,10 +39,12 @@
   color: white;
 }
 main{
-  background-color: #ebeced
+  background-color: #ebeced;
+  font-family: "Montserrat" !important;
+
 }
 .ant-layout.ant-layout-has-sider.css-dev-only-do-not-override-1vtf12y{
-  background-color: #ebeced !important
+  background-color: #fff !important
 
 }
 .nav-item{
@@ -55,14 +65,14 @@ main{
   /* color: white !important; */
 }
 .ant-layout-sider-children{
-  /* width: 120%; */
+  background-color: #fff;
 }
 .ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-below {
-  background-color: #B3CF32 !important;
+  /* background-color: #B3CF32 !important; */
 }
 .list-group-item{
-  background-color:  #9cbf2d !important;
-  color: #403f3f !important;
+  /* background-color:  #9cbf2d !important; */
+  color: #525252 !important;
 }
 .top-links{
   color: white !important;
@@ -80,27 +90,44 @@ main{
 }
 .ant-menu-title-content{
   /* color: #808080; */
+  font-weight: 900;
+  width: fit-content;
+  /* color: #525252; */
+
 }
 .get-to-know-us-heading{
   font-weight: 900;
 }
 .team-heading{
-  color:  #9cbf2d !important;
+  color:  #B3CF32 !important;
   font-size: 60px;
   font-weight: bolder;
+
+}
+.team-heading-container{
+  /* background-color:  #B3CF32 !important; */
+  padding: 2em;
+  margin-bottom: 3em;
+  margin-top: 3em;
 
 }
 .about-us-heading{
   font-size: 60px;
   font-weight: bolder;
   opacity: 80%;
-  color:  #9cbf2d !important;
+  color:  #B3CF32 !important;
   /* margin-bottom: 2em; */
   /* margin-top: -2em; */
 
 }
+.about-us{
+  margin-top: 100px !important;
+}
 :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light .ant-menu-item-selected, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu .ant-menu-item-selected{
   color: #808080;
+}
+.ant-layout-sider-zero-width-trigger.ant-layout-sider-zero-width-trigger-left{
+  background-color: #B3CF32;
 }
 .services-btn.btn.btn-primary{
   background-color: #B3CF32 !important;
@@ -111,11 +138,14 @@ main{
   border-color:#808080 !important;
 
 }
-@media only screen and (min-width: 768px) {
+.card-footer{
+  text-align: initial;
+}
+/* @media only screen and (min-width: 768px) {
   body {
     font-size: 50px;
   }
-}
+} */
 .nav-icon{
   vertical-align: -webkit-baseline-middle !important;
 }
@@ -134,6 +164,8 @@ main{
   text-align: center;
   z-index: 1;
   color:  #B3CF32 !important;
+  /* font-family: 'Montserrat'; */
+
 }
 .intern-caption p {
   /* font-size: 16px; */
@@ -149,32 +181,40 @@ main{
   white-space: pre-wrap;
   font-weight: 600;
   font-style: normal;
-  font-size: 35px;
-  letter-spacing: -.01em;
+  /* font-size: 35px; */
+  /* letter-spacing: -.01em; */
   line-height: 1em;
   text-transform: none;
+  color: #525252;
+  /* font-family: 'Montserrat'; */
+
+
 }
 .big-text{
   margin: 5em 0 2em 0;
 }
 .small-text{
-  font-family: proxima-nova;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
     letter-spacing: .01em;
     line-height: 1.8em;
     text-transform: none;
-    color: rgba(112,112,112,.5);
+    color: #525252
 }
 .apply{
-  font-family: futura-pt;
     font-size: 12px;
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: .24em;
 }
+.apply:hover{
+  background-color: #B3CF32 !important;
+  color: #fff !important;
+  border-color: #B3CF32 !important;
+}
+
 .description{
   margin: 5em 0;
 }
@@ -184,4 +224,77 @@ main{
     letter-spacing: -.008px;
     margin: 0;
 }
+}
+.services-headings {
+  font-family: 'Jost';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: -.01em;
+    line-height: 1em;
+    text-transform: none;
+}
+.services-description {
+  /* font-family: futura-pt; */
+  
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: -.01em;
+    line-height: 1em;
+    text-transform: none;
+    color: #525252;
+}
+.sub-headings{
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: -.01em;
+  line-height: 1em;
+  text-transform: none;
+}
+@media screen and (max-width: 640px){
+  .services-description {
+    font-size: 16px;
+}
+.services-headings{
+  font-size: 16px;
+
+}
+.sub-headings{
+  font-size: 15px;
+}
+.small-text{
+  font-size: 16px;
+}
+.team-heading{
+  font-size: 30px;
+}
+}
+.ant-menu-item.ant-menu-item-only-child{
+  /* color: #fff; */
+  color: #525252;
+
+}
+/* .ant-menu-item.ant-menu-item-only-child:hover{
+  color: #fff !important;
+  background-color: #B3CF32;
+
+} */
+.ant-menu-item.ant-menu-item-active.ant-menu-item-selected.ant-menu-item-only-child:hover{
+  color: #fff !important;
+  background-color: #B3CF32 !important;
+}
+.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child{
+  color: #fff !important;
+  background-color: #B3CF32 !important;
+}
+hr{
+  margin: 5% !important;
+}
+.contact-us-icon-names{
+  margin-bottom: 2em;
+}
+.contact-icon{
+  margin-bottom: 2em;
 }

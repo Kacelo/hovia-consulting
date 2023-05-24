@@ -27,13 +27,13 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h2>TRAINING PROGRAMMES</h2>
+              <h2 className="services-headings">TRAINING PROGRAMMES</h2>
             </div>
             <div>
               Our training packages are customized according to individual
@@ -48,13 +48,15 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h5>Educational Leadership Programme (ELP)</h5>
+              <h5 className="sub-headings">
+                Educational Leadership Programme (ELP)
+              </h5>
             </div>
             <div>
               Focuses on coaching Senior Educational Leaders / Management of
@@ -69,13 +71,13 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h5>Teacher Trainer Programme (TTP)</h5>
+              <h5 className="sub-headings">Teacher Trainer Programme (TTP)</h5>
             </div>
             <div>
               Our Teach the Teacher / Train the Trainer Programme focuses on
@@ -91,13 +93,15 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h5>Skills Development Programme (SDP)</h5>
+              <h5 className="sub-headings">
+                Skills Development Programme (SDP)
+              </h5>
             </div>
             <div>
               We focus on various skills development techniques, for
@@ -114,7 +118,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -139,25 +143,29 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h2>TALENT ACQUISITION MANAGEMENT PROGRAMME (TAMP) </h2>
+              <h2 className="services-headings">
+                TALENT ACQUISITION MANAGEMENT PROGRAMME (TAMP){" "}
+              </h2>
             </div>
             <div>
-              The aim of our Talent Acquisition Management Programme, Hovia
-              Talent Pool (HTP) is the acquisition of knowledge, skills and
-              abilities and growth through training and development. We source
-              talent, assess skills and qualifications, manage candidate
-              strengths, match the right skills sets and onboard / place right
-              candidates with the right companies/ institutions. We attract,
-              engage, and retain talent through our talent acquisition
-              expertise, and avail the best talent to the hiring team at the
-              right time. With our programme, the candidates have more chance of
-              being hired in the right positions, with pay equity.
+              <p>
+                The aim of our Talent Acquisition Management Programme, Hovia
+                Talent Pool (HTP) is the acquisition of knowledge, skills and
+                abilities and growth through training and development. We source
+                talent, assess skills and qualifications, manage candidate
+                strengths, match the right skills sets and onboard / place right
+                candidates with the right companies/ institutions. We attract,
+                engage, and retain talent through our talent acquisition
+                expertise, and avail the best talent to the hiring team at the
+                right time. With our programme, the candidates have more chance
+                of being hired in the right positions, with pay equity.
+              </p>
             </div>
           </Col>
         </Row>{" "}
@@ -166,7 +174,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -226,13 +234,15 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h2>EDUCATIONAL COACHING & MENTORING</h2>
+              <h2 className="services-headings">
+                EDUCATIONAL COACHING & MENTORING
+              </h2>
             </div>
             {/* <div>
               Our training packages are customized according to individual
@@ -247,7 +257,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -270,7 +280,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -296,7 +306,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -321,7 +331,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -375,13 +385,15 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
           <Col style={{ textAlign: "initial" }}>
             <div>
-              <h2>EDUCATION FUNDING MANAGEMENT</h2>
+              <h2 className="services-headings">
+                EDUCATION FUNDING MANAGEMENT
+              </h2>
             </div>
             <div>
               Access to inclusive and quality education is a fundamental right
@@ -398,7 +410,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -465,14 +477,30 @@ function Individuals() {
     <div style={{ margin: "5em 0" }}>
       <Row>
         <Col>
-          <h1
-            style={{
-              fontSize: windowSize.innerWidth < 460 ? "4em" : "5em",
-              fontWeight: "bolder",
-            }}
-          >
-            SERVICES FOR INDIVIDUALS
-          </h1>
+          <div className="image-container">
+            <img
+              style={{
+                mixBlendMode: "darken",
+                width: windowSize.innerWidth < 991 ? "100%" : "80%",
+              }}
+              src={require("../../../assets/grad.jpg")}
+            ></img>
+            <div
+              className="intern-caption"
+              style={{ fontSize: "12.5vw", textAlign: "center" }}
+            >
+              <div
+                className="image-title sqs-dynamic-text"
+                data-animation-override=""
+                data-width-percentage="42.3"
+                style={{ fontSize: "max(0.75rem, 42.3%)" }}
+              >
+                <p className="" style={{ whiteSpace: "pre-wrap" }}>
+                  INDIVIDUALS
+                </p>
+              </div>
+            </div>
+          </div>
         </Col>
       </Row>
       <Row
@@ -480,19 +508,24 @@ function Individuals() {
         // md={2}
         className="g-4"
         style={{
-          margin: windowSize.innerWidth > 1400 ? "2em 300px" : "2em 20px",
+          margin: windowSize.innerWidth > 1400 ? "2em 300px" : "2em 35px",
         }}
       >
         {" "}
-        <Col style={{ textAlign: "" }}>
-          Preparing individuals, learners and students with the essential skills
-          for the future requires all Educators to create a collaborative
-          culture for learning that sparks curiosity and creativity. We explore
-          with tools that will boost student engagement, ignite creativity, and
-          foster collaborative learning and development! (Professional
-          Statement)
+        <Col style={{ textAlign: "" }} >
+          <h2 className="services-description">
+            Preparing individuals, learners and students with the essential
+            skills for the future requires all Educators to create a
+            collaborative culture for learning that sparks curiosity and
+            creativity. We explore with tools that will boost student
+            engagement, ignite creativity, and foster collaborative learning and
+            development! (Professional Statement)
+          </h2>
         </Col>
       </Row>
+      {/* <div className="team-heading-container">
+      <h1 className="team-heading">Take a look at our services</h1>
+      </div> */}
       <HOVIA_CONTENT_SIDEBAR contentArray={compArray} titles={titles} />
     </div>
   );

@@ -54,7 +54,8 @@ function HOVIA_CONTENT_SIDEBAR(props) {
           console.log(collapsed, type);
         }}
         style={{
-          backgroundColor: "#B3CF32",
+          backgroundColor: "fff",
+          background: "#fff"
         }}
       >
         <div className="logo" />
@@ -84,21 +85,33 @@ function HOVIA_CONTENT_SIDEBAR(props) {
               label: titles[3],
             },
           ]}
-          style={{
-            backgroundColor: "#B3CF32",
-            color: "white",
-          }}
+          style={
+            windowSize.innerWidth < 992
+              ? {
+                  // backgroundColor: "#B3CF32",
+                  color: "fff",
+                  height: "inherit",fontWeight: 900
+                }
+              : { width: "fit-content", height: "inherit",fontWeight: 900 }
+          }
         />
       </Sider>
       <Content
-        style={{
-          margin: "0px 20px 0 20px",
-          padding: 24,
-          minHeight: "80vh",
-          background: colorBgContainer,
-          // height: windowSize.innerWidth > 500 ? "80vh" : undefined,
-          maxHeight: "280vh",
-        }}
+        style={
+          windowSize.innerWidth < 992
+            ? {
+                margin: "0px 0px 0 0px",
+                minHeight: "80vh",
+                background: 'white',
+                color: " #525252",
+              }
+            : {
+                margin: "0px 0px 0 16rem",
+                minHeight: "80vh",
+                background: 'white',
+                color: " #525252",
+              }
+        }
       >
         {contentDisplay(component)}
       </Content>
