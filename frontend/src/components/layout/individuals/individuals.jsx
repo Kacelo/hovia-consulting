@@ -27,7 +27,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -48,7 +48,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -71,7 +71,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -93,7 +93,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -118,7 +118,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -143,7 +143,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -174,7 +174,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -234,7 +234,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -257,7 +257,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -280,7 +280,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -306,7 +306,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -331,7 +331,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -385,7 +385,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -410,7 +410,7 @@ function Individuals() {
           // md={2}
           className="g-4"
           style={{
-            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 20px",
+            margin: windowSize.innerWidth > 1400 ? "0 300px 0 0" : "0 35px",
           }}
         >
           {" "}
@@ -508,7 +508,7 @@ function Individuals() {
         // md={2}
         className="g-4"
         style={{
-          margin: windowSize.innerWidth > 1400 ? "2em 300px" : "2em 20px",
+          margin: windowSize.innerWidth > 1400 ? "2em 300px" : "2em 35px",
         }}
       >
         {" "}

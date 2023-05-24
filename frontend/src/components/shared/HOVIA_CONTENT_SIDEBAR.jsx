@@ -100,12 +100,10 @@ function HOVIA_CONTENT_SIDEBAR(props) {
         style={
           windowSize.innerWidth < 992
             ? {
-                margin: "0px 20px 0 20px",
+                margin: "0px 0px 0 0px",
                 minHeight: "80vh",
                 background: 'white',
                 color: " #525252",
-                // height: windowSize.innerWidth > 500 ? "80vh" : undefined,
-                // maxHeight: "280vh",
               }
             : {
                 margin: "0px 0px 0 16rem",
