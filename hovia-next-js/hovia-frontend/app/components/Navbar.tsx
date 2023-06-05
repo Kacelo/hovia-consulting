@@ -51,9 +51,9 @@ import {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} >
-  <Image src="/images/shena-logo.jpeg"  alt=''height={144}
-              width={100} style={{mixBlendMode: "darken"}}/>
+          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} style={{cursor: "pointer"}}>
+  <Image src="/images/logo/logo2.jpeg"  alt=''height={144}
+              width={200} style={{mixBlendMode: "darken"}} />
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
@@ -78,10 +78,10 @@ import {
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg={'yellow.400'}
+              bg={'#B3CF32'}
               href={'#'}
               _hover={{
-                bg: 'yellow.400',
+                bg: 'green.400',
               }}>
               Call Now
             </Button>
@@ -257,12 +257,12 @@ import {
         {
           label: 'Individuals',
           subLabel: '',
-          href: '/barbershop',
+          href: '/services/individuals',
         },
         {
-          label: 'Institutions',
+          label: 'Organizations',
           subLabel: '',
-          href: '#',
+          href: '/services/organizations',
         },
         {
             label: 'Internship Program',

@@ -33,7 +33,7 @@ import {
             </Text>
             <Stack direction={'row'}>
               <Button
-                bg={'green.500'}
+                bg={'#B3CF32'}
                 rounded={'full'}
                 color={'white'}
                 _hover={{ bg: 'green.500' }}>
