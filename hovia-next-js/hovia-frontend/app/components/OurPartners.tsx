@@ -38,7 +38,7 @@ const PartnersSection: React.FC<PartnersSectionProps> = ({ partners }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={partner.logoUrl} alt={partner.name} boxSize={40} />
+              <Image src={partner.logoUrl} alt={partner.name} boxSize={40} style={{color: "transparent", mixBlendMode: "darken"}}/>
             </Link>
           ))}
         </Stack>

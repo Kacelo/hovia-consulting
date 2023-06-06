@@ -1,8 +1,9 @@
 "use client"
 import { ChakraProvider } from '@chakra-ui/react'
 import Navbar from './components/Navbar'
-// import Footer from '@/components/Footer'
-
+import Footer from './components/Footer'
+import '../app/globals.css';
+import { Layout } from "antd";
 export default function RootLayout({
   children,
 }: {
@@ -10,10 +11,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body><ChakraProvider>
+      <body style={{background: "#E6E6E6 !important"}}><ChakraProvider>
+        {/* <Layout style={{background: "#E6E6E6 !important"}}> */}
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        {/* </Layout> */}
+       
+        <Footer />
         </ChakraProvider></body>
     </html>
   )

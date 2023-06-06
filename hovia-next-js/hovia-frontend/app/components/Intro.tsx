@@ -9,6 +9,7 @@ import {
   StackDivider,
   Icon,
   useColorModeValue,
+  Button,
 } from "@chakra-ui/react";
 import {
   IoAnalyticsSharp,
@@ -46,19 +47,19 @@ export default function WhoWeAre() {
     <Container maxW={"5xl"} py={12}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
-          <Text
+          <Heading
             textTransform={"uppercase"}
             color={"#b7d13c"}
             fontWeight={600}
-            fontSize={"sm"}
-            bg={useColorModeValue("white", "white")}
-            p={2}
+            fontSize={"2xl"}
+            // bg={useColorModeValue("white", "white")}
+            p={0}
             alignSelf={"flex-start"}
             rounded={"md"}
           >
-            Our Story
-          </Text>
-          <Heading>ABOUT US</Heading>
+           ABOUT US
+          </Heading>
+          {/* <Heading>ABOUT US</Heading> */}
           <Text color={"gray.500"} fontSize={"lg"}>
             We are Educational Strategist, offering a variety of Educational
             Services to Learners, Students, Teachers, Trainers, Parents &amp;
@@ -70,6 +71,17 @@ export default function WhoWeAre() {
             Services, among other. At HOVIA, we embrace a culture of Lifelong
             Teaching and Learning.{" "}
           </Text>
+          <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+              <Button
+                rounded={'full'}
+                bg={'#B3CF32'}
+                color={'white'}
+                _hover={{
+                  bg: 'white.500',
+                }}>
+                Learn More
+              </Button>
+            </Stack>
           {/* <Stack
             spacing={4}
             divider={

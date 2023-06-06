@@ -267,7 +267,7 @@ import {
         {
             label: 'Internship Program',
             subLabel: '',
-            href: '#',
+            href: '/services/internship',
           },
       ],
     },

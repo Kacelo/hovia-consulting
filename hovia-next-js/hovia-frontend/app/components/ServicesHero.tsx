@@ -11,9 +11,13 @@ import {
     title: string;
     text: string;
     imageSrc: string;
+    buttonWording: string;
   }
-  
-  export default function ServicesHero({ title, text, imageSrc}: FeatureProps) {
+  const openGoogleForm = () => {
+    const url = `https://docs.google.com/forms/d/e/1FAIpQLSc1gqVUKwDfC3T5AEIPyuWJJwiBx0Nk3ssKistMPi-7B5swxg/viewform`;
+    window.open(url, '_blank');
+  };
+  export default function ServicesHero({ title, text, imageSrc, buttonWording}: FeatureProps) {
     return (
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'column', lg: 'row' }}>
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -43,15 +47,24 @@ import {
               {text}
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-              <Button
+              {buttonWording === 'Apply Now' ? <Button
+                rounded={'full'}
+                bg={'#B3CF32'}
+                color={'white'}
+                onClick={openGoogleForm}
+                _hover={{
+                  bg: 'white.500',
+                }}>
+                  {buttonWording}
+              </Button>:<Button
                 rounded={'full'}
                 bg={'#B3CF32'}
                 color={'white'}
                 _hover={{
                   bg: 'white.500',
                 }}>
-                Book appointment
-              </Button>
+                {buttonWording}
+              </Button>}
             </Stack>
           </Stack>
         </Flex>

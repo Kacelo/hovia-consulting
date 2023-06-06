@@ -6,14 +6,15 @@ import {
     VStack,
     useBreakpointValue,
   } from '@chakra-ui/react';
-  
+  import AnchorLink from "react-anchor-link-smooth-scroll";
+
   export default function HoviaHero() {
     return (
       <Flex
         w={'full'}
         h={'100vh'}
         backgroundImage={
-          'url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
+          'url(/images/landing.webp)'
         }
         backgroundSize={'cover'}
         backgroundPosition={'center center'}>
@@ -27,9 +28,8 @@ import {
               color={'white'}
               fontWeight={700}
               lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-              eiusmod tempor
+              fontSize={useBreakpointValue({ base: '3xl', md: '5xl' })}>
+              HOVIA EDUCATIONAL CONSULTANTS (HEC)
             </Text>
             <Stack direction={'row'}>
               <Button
@@ -37,7 +37,7 @@ import {
                 rounded={'full'}
                 color={'white'}
                 _hover={{ bg: 'green.500' }}>
-                Show me more
+                Contact Us
               </Button>
               <Button
                 bg={'whiteAlpha.300'}

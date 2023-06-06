@@ -8,6 +8,7 @@ import {
   Stack,
   Text,
   useColorModeValue,
+  Link
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
 import {
@@ -46,7 +47,7 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
           justify={"center"}
           color={"white"}
           // rounded={'full'}
-          bg={useColorModeValue("white", "gray.700")}
+          bg={"#E6E6E6"}
         >
           {imageSrc ? (
             <Image
@@ -66,8 +67,8 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button bg={"white"} color={"#b7d13c"} size={"sm"}>
-          Learn more
+        <Button bg={"#b7d13c"} color={""} size={"sm"} >
+          <Link href={href}>Learn more</Link>
         </Button>
       </Stack>
     </Box>
@@ -76,7 +77,7 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
 
 export default function Services() {
   return (
-    <Box p={2} marginTop={"20"} >
+    <Box p={2} marginTop={"20"} id="ourServices">
       <Stack spacing={1} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
           OUR SERVICES
@@ -95,7 +96,7 @@ export default function Services() {
                 Educators to create a collaborative culture for learning that sparks curiosity and
                 creativity. We explore with tools that will boost student engagement, ignite creativity,
                 and foster collaborative learning and development!`}
-            href={"#"}
+            href={"/services/individuals"}
             imageSrc="/images/services/grad.jpg"
           />
           <Card
@@ -107,7 +108,7 @@ export default function Services() {
                 institutions / organizations thrive in their educational business operations, to achieve
                 optimal efficiency and productivity with our customized services, while focusing on
                 their end goal.`}
-            href={"#"}
+            href={"/services/organizations"}
             imageSrc="/images/services/institution.jpg"
           />
           <Card
@@ -120,7 +121,7 @@ export default function Services() {
                 that Hovia holds. Interns will be given a minimum of 6 months duration with an opportunity
                 for extension. During the 6 months of internship certain areas will be developed through
                 Hovia projects.`}
-            href={"#"}
+            href={"/services/internship"}
             imageSrc="/images/services/intern2.jpg"
           />
           {/* <Card

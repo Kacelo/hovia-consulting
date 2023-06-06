@@ -19,7 +19,7 @@ const individualsData =
 function Internships() {
   return (
     <div>
-        <ServicesHero title={individualsData.title} text={individualsData.text} imageSrc={individualsData.imageSrc}/>
+        <ServicesHero title={individualsData.title} text={individualsData.text} imageSrc={individualsData.imageSrc} buttonWording='Apply Now'/>
     </div>
   )
 }
