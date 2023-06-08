@@ -33,13 +33,13 @@ import {
                   position: 'absolute',
                   bottom: 1,
                   left: 0,
-                  bg: '#B3CF32',
+                  bg: '#008000',
                   zIndex: -1,
                 }}>
                 Services for
               </Text>
               <br />{' '}
-              <Text color={'#B3CF32'} as={'span'}>
+              <Text color={'#008000'} as={'span'}>
                 {title}
               </Text>{' '}
             </Heading>
@@ -49,7 +49,7 @@ import {
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
               {buttonWording === 'Apply Now' ? <Button
                 rounded={'full'}
-                bg={'#B3CF32'}
+                bg={'#008000'}
                 color={'white'}
                 onClick={openGoogleForm}
                 _hover={{
@@ -58,7 +58,7 @@ import {
                   {buttonWording}
               </Button>:<Button
                 rounded={'full'}
-                bg={'#B3CF32'}
+                bg={'#008000'}
                 color={'white'}
                 _hover={{
                   bg: 'white.500',
