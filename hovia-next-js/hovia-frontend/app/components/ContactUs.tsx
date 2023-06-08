@@ -70,9 +70,9 @@ function ContactUs() {
           <Image
             src="/images/contact-us/Print_Stacked_Green.png"
             alt=""
-            height={20}
+            height={100}
             width={20}
-            style={{ width: "auto", margin: "auto" }}
+            style={{ width: "auto", margin: "auto", marginBottom: "2em" }}
           ></Image>
         </SimpleGrid>
         <SimpleGrid
