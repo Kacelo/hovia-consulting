@@ -49,7 +49,7 @@ export default function WhoWeAre() {
         <Stack spacing={4}>
           <Heading
             textTransform={"uppercase"}
-            color={"#b7d13c"}
+            color={"#008000"}
             fontWeight={600}
             fontSize={"2xl"}
             // bg={useColorModeValue("white", "white")}
@@ -74,7 +74,7 @@ export default function WhoWeAre() {
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
               <Button
                 rounded={'full'}
-                bg={'#B3CF32'}
+                bg={'#008000'}
                 color={'white'}
                 _hover={{
                   bg: 'white.500',

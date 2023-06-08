@@ -78,7 +78,7 @@ import {
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg={'#B3CF32'}
+              bg={'#008000'}
               href={'#'}
               _hover={{
                 bg: 'green.400',
@@ -150,12 +150,12 @@ import {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('yellow.50', 'gray.900') }}>
+        _hover={{ bg: useColorModeValue('green.50', 'gray.900') }}>
         <Stack direction={'row'} align={'center'}>
           <Box>
             <Text
               transition={'all .3s ease'}
-              _groupHover={{ color: 'yellow.400' }}
+              _groupHover={{ color: 'green.400' }}
               fontWeight={500}>
               {label}
             </Text>
@@ -169,7 +169,7 @@ import {
             justify={'flex-end'}
             align={'center'}
             flex={1}>
-            <Icon color={'yellow.400'} w={5} h={5} as={ChevronRightIcon} />
+            <Icon color={'green.400'} w={5} h={5} as={ChevronRightIcon} />
           </Flex>
         </Stack>
       </Link>

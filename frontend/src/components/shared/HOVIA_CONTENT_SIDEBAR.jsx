@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
+  Stack,
+  useBreakpointValue,
+} from '@chakra-ui/react';
+
+
 const { Header, Content, Footer, Sider } = Layout;
 
 function HOVIA_CONTENT_SIDEBAR(props) {
@@ -27,6 +26,7 @@ function HOVIA_CONTENT_SIDEBAR(props) {
     const { innerWidth, innerHeight } = window;
     return { innerWidth, innerHeight };
   }
+
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -48,6 +48,7 @@ function HOVIA_CONTENT_SIDEBAR(props) {
         collapsedWidth="0"
         onBreakpoint={(broken) => {
           console.log(broken);
+
         }}
         onCollapse={(collapsed, type) => {
           setCollapsed(collapsed);

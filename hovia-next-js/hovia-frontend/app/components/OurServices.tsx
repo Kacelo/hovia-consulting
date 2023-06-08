@@ -67,7 +67,8 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button bg={"#b7d13c"} color={""} size={"sm"} >
+        <Button bg={"#008000"} color={"white"} size={"sm"} _hover={{bg: 'green.400'}} 
+> 
           <Link href={href}>Learn more</Link>
         </Button>
       </Stack>
