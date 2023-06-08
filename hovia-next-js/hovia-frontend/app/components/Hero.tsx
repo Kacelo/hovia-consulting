@@ -6,7 +6,6 @@ import {
     VStack,
     useBreakpointValue,
   } from '@chakra-ui/react';
-  import AnchorLink from "react-anchor-link-smooth-scroll";
 
   export default function HoviaHero() {
     return (
