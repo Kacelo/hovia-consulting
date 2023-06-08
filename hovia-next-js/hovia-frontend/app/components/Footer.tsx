@@ -56,7 +56,7 @@ import Image from 'next/image';
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-      <Image src="/images/logo/logo2.jpeg"  alt=''height={144} width={144}/ >
+      <Image src="/images/logo/01_Hovia_Logo HQ.jpg" alt=''height={144} width={144}/ >
           <Text>© 2023 Hovia Education Consultants. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>

@@ -52,8 +52,8 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} style={{cursor: "pointer"}}>
-  <Image src="/images/logo/logo2.jpeg"  alt=''height={144}
-              width={200} style={{mixBlendMode: "darken"}} />
+  <Image src="/images/logo/01_Hovia_Logo HQ.jpg"  alt=''height={244}
+              width={300} style={{mixBlendMode: "darken"}} />
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
