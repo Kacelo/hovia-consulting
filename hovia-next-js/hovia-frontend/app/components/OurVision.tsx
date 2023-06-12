@@ -9,7 +9,7 @@ interface FeatureProps {
 
 const Feature = ({ title, text,  }: FeatureProps) => {
   return (
-    <Stack       maxW={{ base: "350px", md: "275px", lg: "320px"}}
+    <Stack       maxW={{ base: "350px", md: "575px", lg: "520px"}}  p={5}
     >
       <Text fontWeight={600} fontSize={useBreakpointValue({ base: '2xl', md: '3xl'})}>{title}</Text>
       <Text color={'gray.600'}>{text}</Text>
@@ -18,7 +18,7 @@ const Feature = ({ title, text,  }: FeatureProps) => {
 };
 const Intro = ({ title, text,  }: FeatureProps) => {
     return (
-      <Stack       maxW={{ base: "350px", md: "575px", lg: "920px"}}
+      <Stack       maxW={{ base: "350px", md: "720px", lg: "720px"}}
      pb={10} pt={5} >
         <Text fontWeight={600} fontSize={useBreakpointValue({ base: '2xl', md: '3xl'})}>{title}</Text>
         <Text color={'gray.600'}>{text}</Text>
@@ -29,8 +29,9 @@ const Intro = ({ title, text,  }: FeatureProps) => {
 export default function OurVision() {
   return (
     <Container maxW={"8xl"} p={5}>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }} spacing={1}>
         <Intro title ={'WHO WE ARE'} text={'HEC is an Educational Consulting Company that offers a variety of Educational Services to Learner, Students, Teachers, Trainers, Parents & amp; Educational Institutions. We specialize in Talent Management, Education Change Management, Educational Coaching, Training and Education Quality Assurance Services, among others.' }/>
-      <SimpleGrid columns={{ base: 1, md: 3, lg: 4 }} spacing={1}>
+        <SimpleGrid columns={{ base: 1, md: 1, lg: 1 }} spacing={1}>
         <Feature
           title={'OUR VISION'}
           text={
@@ -58,6 +59,8 @@ export default function OurVision() {
           `Empowering through Education!`}
         />
       </SimpleGrid>
+        </SimpleGrid>
+      
     </Container>
   );
 }
