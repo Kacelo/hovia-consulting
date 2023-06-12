@@ -29,7 +29,7 @@ import {
               color={'white'}
               fontWeight={900}
               lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: '3xl', md: '6xl', lg: '8xl' })}>
+              fontSize={useBreakpointValue({ base: '3xl', md: '6xl', lg: '7xl' })}>
              CONTACT US
             </Text>
             {/* <Stack direction={'row'}>
