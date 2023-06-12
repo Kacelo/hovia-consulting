@@ -39,7 +39,7 @@ import {
                 Services for
               </Text>
               <br />{' '}
-              <Text color={'#008000'} as={'span'}>
+              <Text color={''} as={'span'}>
                 {title}
               </Text>{' '}
             </Heading>

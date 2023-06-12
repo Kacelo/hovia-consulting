@@ -60,7 +60,7 @@ function Organizations() {
         imageSrc={individualsData.imageSrc}
         buttonWording="Book appointment"
       />
-      <Box p={4} mt={10}>
+      <Box p={4} mt={10} mb={10}>
         <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
           <Heading color={""} mb={5} fontSize={{ base: "3xl", md: "5xl" }}>
             EDUCATION PROJECTS MANAGEMENT{" "}
@@ -90,7 +90,7 @@ function Organizations() {
           </Heading>
         </Stack>
 
-        <Container maxW={"6xl"} mt={10}>
+        <Container maxW={"6xl"} mt={10} mb={10}>
           <Text>
             HEC helps Institutions/ Organizations with Data Management including
             Data Collection, Analysis & Reporting, as well as Database

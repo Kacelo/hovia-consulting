@@ -105,16 +105,16 @@ function Individuals() {
         imageSrc={individualsData.imageSrc}
         buttonWording="Book appointment"
       />
-      <Box p={4} mt={10}>
+      <Box p={4} mt={10} mb={10}>
         <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
           <Heading color={""} mb={5} fontSize={{ base: "3xl", md: "5xl" }}>
-            TALENT ACQUISITION MANAGEMENT
+            TALENT MANAGEMENT
           </Heading>
         </Stack>
 
         <Container maxW={"6xl"} mt={10}>
           <Text>
-            Through our Talent Acquisition Management Programme, Hovia Talent
+            Through our Talent Management Programme, Hovia Talent
             Pool (HTP) we acquire knowledge, skills, abilities, and growth
             through training and development. We source talent, assess skills
             and qualifications, manage candidate strengths, match the right
@@ -138,7 +138,7 @@ function Individuals() {
           </Heading>
         </Stack>
 
-        <Container maxW={"6xl"} mt={10}>
+        <Container maxW={"6xl"} mt={10}  mb={10}>
           <Text>
             Access to inclusive and quality education is a fundamental right for
             all… Hovia will help make your academic journey possible by securing
