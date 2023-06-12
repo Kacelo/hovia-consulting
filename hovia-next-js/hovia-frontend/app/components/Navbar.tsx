@@ -57,6 +57,8 @@ export default function Navbar() {
           flex={{ base: 1 }}
           justify={{ base: "center", md: "start" }}
           style={{ cursor: "pointer" }}
+          as={'a'}
+          href={'/'}
         >
           <Image
             src="/images/logo/01_Hovia_Logo HQ.jpg"
