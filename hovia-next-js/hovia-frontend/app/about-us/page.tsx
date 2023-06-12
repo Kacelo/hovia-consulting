@@ -32,7 +32,7 @@
                   color={'white'}
                   fontWeight={700}
                   lineHeight={1.2}
-                  fontSize={useBreakpointValue({ base: '3xl', md: '4xl', lg: "6xl" })}>
+                  fontSize={useBreakpointValue({ base: '3xl', md: '6xl', lg: '7xl' })}>
                 GET TO KNOW US
                 </Text>
                 
