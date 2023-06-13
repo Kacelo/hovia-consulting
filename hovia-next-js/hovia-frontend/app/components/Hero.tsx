@@ -28,7 +28,7 @@ import {
               fontWeight={700}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: '3xl', md: '6xl' })}>
-              HOVIA EDUCATIONAL CONSULTANTS (HEC)
+              Welcome To <br /> HOVIA Educational Consaltants (HEC)
             </Text>
             <Stack direction={'row'}>
               <Button
