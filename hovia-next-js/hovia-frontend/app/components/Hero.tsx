@@ -6,10 +6,12 @@ import {
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function HoviaHero() {
   return (
-    <Flex
+    <>
+        <Flex
       w={"full"}
       h={"100vh"}
       backgroundImage={"url(/images/landing.webp)"}
@@ -32,16 +34,16 @@ export default function HoviaHero() {
             HOVIA EDUCATIONAL CONSULTANTS (HEC)
           </Text>
           <Stack direction={"row"}>
-            <Button
-                        as={"a"}
-              bg={"#008000"}
-              rounded={"full"}
-              color={"white"}
-              _hover={{ bg: "green.500" }}
-              href={'/contact-us'}
-            >
-              Contact Us
-            </Button>
+            <Link href="/contact-us" passHref>
+              <Button
+                bg="#008000"
+                rounded="full"
+                color="white"
+                _hover={{ bg: "green.500" }}
+              >
+                Contact Us
+              </Button>
+            </Link>
             <Button
               bg={"whiteAlpha.300"}
               rounded={"full"}
@@ -63,5 +65,7 @@ export default function HoviaHero() {
         </Stack>
       </VStack>
     </Flex>
+    </>
+
   );
 }

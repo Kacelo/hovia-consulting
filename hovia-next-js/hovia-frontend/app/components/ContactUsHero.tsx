@@ -10,6 +10,7 @@ import {
 
   export default function ContactUsHero() {
     return (
+      <>
       <Flex
         w={'full'}
         h={'100vh'}
@@ -34,5 +35,7 @@ import {
           </Stack>
         </VStack>
       </Flex>
+      </>
+      
     );
   }

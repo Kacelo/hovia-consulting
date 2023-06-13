@@ -8,7 +8,7 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  Link
+  Link,
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
 import {
@@ -31,7 +31,7 @@ interface CardProps {
 const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
   return (
     <Box
-      maxW={{ base: "full", md: "275px", lg: "320px"}}
+      maxW={{ base: "full", md: "275px", lg: "320px" }}
       w={"full"}
       borderWidth="0px"
       borderRadius="sm"
@@ -67,10 +67,17 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button bg={"#008000"} color={"white"} size={"sm"} _hover={{bg: 'green.400'}} 
-> 
-          <Link href={href}>Learn more</Link>
-        </Button>
+        <Link href={href}>
+          <Button
+            bg={"#008000"}
+            color={"white"}
+            size={"sm"}
+            _hover={{ bg: "green.400" }}
+          >
+            {" "}
+            Learn more
+          </Button>
+        </Link>
       </Stack>
     </Box>
   );
@@ -88,7 +95,7 @@ export default function Services() {
         </Text>
       </Stack>
 
-      <Container maxW={"150ch"} mt={6}>
+      <Container maxW={"150ch"} mt={{ base: "6em", sm: "10em" }}>
         <Flex flexWrap="wrap" gridGap={12} justify="center">
           <Card
             heading={"SERVICES FOR INDIVIDUALS"}

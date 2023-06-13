@@ -69,7 +69,8 @@ export default function SmallWithLogoLeft() {
           alt=""
           height={144}
           width={144}
-        />
+          style={{ mixBlendMode: "darken", height: "auto", width:"auto" }}
+          />
         <Text>© 2023 Hovia Education Consultants. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton label={"Facebook"} href={"#"}>

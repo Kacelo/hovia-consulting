@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Box,
   Flex,
@@ -22,10 +23,33 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 import Image from "next/image";
-import useBreakpoints from "./Breakpoints";
+// import useBreakpoints from "./Breakpoints";
+const email = "hoviaconsult@iway.na";
+const subject = "Enquiry";
+const body = "";
+const composeEmail = () => {
+  const url = `mailto:${encodeURIComponent(
+    email
+  )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = url;
+};
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
-  const windowWidth = useBreakpoints();
+  // const windowWidth = useBreakpoints();
+  useEffect(() => {
+    const handleEmailClick = () => {
+      composeEmail();
+    };
+
+    const emailButton = document.getElementById('navEmailButton');
+    if(emailButton){
+      emailButton.addEventListener('click', handleEmailClick);
+      return () => {
+        emailButton.removeEventListener('click', handleEmailClick);
+      };
+    }
+  
+  }, []);
   return (
     <Box>
       <Flex
@@ -57,16 +81,18 @@ export default function Navbar() {
           flex={{ base: 1 }}
           justify={{ base: "center", md: "start" }}
           style={{ cursor: "pointer" }}
-          as={'a'}
-          href={'/'}
+         
         >
+          <Link href="/">
           <Image
             src="/images/logo/01_Hovia_Logo HQ.jpg"
             alt=""
             height={244}
             width={300}
-            style={{ mixBlendMode: "darken" }}
+            style={{ mixBlendMode: "darken", height: "auto", width:"auto" }}
           />
+          </Link>
+         
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -77,7 +103,7 @@ export default function Navbar() {
           direction={"row"}
           spacing={6}
         >
-          {windowWidth < 768 ? (
+          {/* {windowWidth < 768 ? (
             <Button
               as={"a"}
               fontSize={"sm"}
@@ -87,7 +113,7 @@ export default function Navbar() {
             >
               Book appointment
             </Button>
-          ) : null}
+          ) : null} */}
           <Button
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
@@ -99,8 +125,9 @@ export default function Navbar() {
             _hover={{
               bg: "green.400",
             }}
+            id="navEmailButton"
           >
-            Call Now
+            Contact Us Now
           </Button>
         </Stack>
       </Flex>
@@ -118,9 +145,9 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack direction={"row"} spacing={4} mt={10}>
+    <Stack direction={"row"} spacing={4} >
       {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
+        <Box key={navItem.label} mt='auto' mb='auto'>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
