@@ -89,7 +89,7 @@ export default function Navbar() {
             alt=""
             height={244}
             width={300}
-            style={{ mixBlendMode: "darken", height: "auto", width:"auto" }}
+            style={{ mixBlendMode: "darken" }}
           />
           </Link>
          
