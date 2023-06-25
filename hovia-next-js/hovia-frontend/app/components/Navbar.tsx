@@ -28,9 +28,9 @@ const email = "hoviaconsult@iway.na";
 const subject = "Enquiry";
 const body = "";
 const composeEmail = () => {
-  const url = `mailto:${encodeURIComponent(
-    email
-  )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const url = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
   window.location.href = url;
 };
 export default function Navbar() {
@@ -41,14 +41,13 @@ export default function Navbar() {
       composeEmail();
     };
 
-    const emailButton = document.getElementById('navEmailButton');
-    if(emailButton){
-      emailButton.addEventListener('click', handleEmailClick);
+    const emailButton = document.getElementById("navEmailButton");
+    if (emailButton) {
+      emailButton.addEventListener("click", handleEmailClick);
       return () => {
-        emailButton.removeEventListener('click', handleEmailClick);
+        emailButton.removeEventListener("click", handleEmailClick);
       };
     }
-  
   }, []);
   return (
     <Box>
@@ -81,18 +80,17 @@ export default function Navbar() {
           flex={{ base: 1 }}
           justify={{ base: "center", md: "start" }}
           style={{ cursor: "pointer" }}
-         
         >
           <Link href="/">
-          <Image
-            src="/images/logo/01_Hovia_Logo HQ.jpg"
-            alt=""
-            height={244}
-            width={300}
-            style={{ mixBlendMode: "darken", height: "auto", width:"auto" }}
-          />
+            <Image
+              src="/images/logo/hovialogo.jpg"
+              alt=""
+              height={244}
+              width={300}
+              style={{ mixBlendMode: "darken" }}
+            />
           </Link>
-         
+
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -126,6 +124,7 @@ export default function Navbar() {
               bg: "green.400",
             }}
             id="navEmailButton"
+            onClick={() => composeEmail()}
           >
             Contact Us Now
           </Button>
@@ -145,9 +144,9 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack direction={"row"} spacing={4} >
+    <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label} mt='auto' mb='auto'>
+        <Box key={navItem.label} mt="auto" mb="auto">
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
