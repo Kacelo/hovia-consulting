@@ -95,7 +95,7 @@ export default function Services() {
         </Text>
       </Stack>
 
-      <Container maxW={"150ch"} mt={{ base: "6em", sm: "10em" }}>
+      <Container maxW={"150ch"} mt={{ base: "2em", sm: "2em" }}>
         <Flex flexWrap="wrap" gridGap={12} justify="center">
           <Card
             heading={"SERVICES FOR INDIVIDUALS"}
