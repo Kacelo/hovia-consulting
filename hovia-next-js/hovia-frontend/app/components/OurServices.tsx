@@ -8,7 +8,7 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  Link
+  Link,
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
 import {
@@ -31,7 +31,7 @@ interface CardProps {
 const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
   return (
     <Box
-      maxW={{ base: "full", md: "275px", lg: "320px"}}
+      maxW={{ base: "full", md: "275px", lg: "320px" }}
       w={"full"}
       borderWidth="0px"
       borderRadius="sm"
@@ -67,10 +67,17 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button bg={"#008000"} color={"white"} size={"sm"} _hover={{bg: 'green.400'}} 
-> 
-          <Link href={href}>Learn more</Link>
-        </Button>
+        <Link href={href}>
+          <Button
+            bg={"#008000"}
+            color={"white"}
+            size={"sm"}
+            _hover={{ bg: "green.400" }}
+          >
+            {" "}
+            Learn more
+          </Button>
+        </Link>
       </Stack>
     </Box>
   );
@@ -88,7 +95,7 @@ export default function Services() {
         </Text>
       </Stack>
 
-      <Container maxW={"150ch"} mt={6}>
+      <Container maxW={"150ch"} mt={{ base: "2em", sm: "2em" }}>
         <Flex flexWrap="wrap" gridGap={12} justify="center">
           <Card
             heading={"SERVICES FOR INDIVIDUALS"}
@@ -125,14 +132,6 @@ export default function Services() {
             href={"/services/internship"}
             imageSrc="/images/services/intern2.jpg"
           />
-          {/* <Card
-              heading={'Beauty Products'}
-              icon={<Icon as={FcManager} w={10} h={10} />}
-              description={
-                'Discover a world of beauty at your fingertips with our carefully curated selection of beauty products. From luxurious skincare essentials to makeup must-haves and haircare gems, our collection features top-quality brands that will elevate your beauty routine and enhance your natural glow.'
-              }
-              href={'#'}
-            /> */}
         </Flex>
       </Container>
     </Box>

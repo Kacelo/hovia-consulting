@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   Box,
   Container,
@@ -17,36 +17,94 @@ import {
 } from "@chakra-ui/react";
 import { FaEnvelope } from "react-icons/fa";
 const phoneNumber = "+264817759537";
+const openWhatsApp = () => {
+  const message = "Hello, I would like to book an appointment.";
+  const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+    message
+  )}`;
+  window.open(url, "_blank");
+};
+const email = "hoviaconsult@iway.na";
+const subject = "Enquiry";
+const body = "";
+const composeEmail = () => {
+  const url = `mailto:${encodeURIComponent(
+    email
+  )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = url;
+};
+const telephoneNumber = +26461221463;
+const openPhoneDialer = () => {
+  const url = `tel:${encodeURIComponent(telephoneNumber)}`;
+  window.location.href = url;
+};
+const address =
+  "No. 96, Columbia Street, Dorado Park Ext. , Windhoek, Namibia";
+const openGoogleMaps = () => {
+  const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    address
+  )}`;
+  window.open(url, "_blank");
+};
 function ContactUs() {
-  const openWhatsApp = () => {
-    const message = "Hello, I would like to book an appointment.";
-    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
-      message
-    )}`;
-    window.open(url, "_blank");
-  };
-  const email = "hoviaconsult@iway.na";
-  const subject = "Enquiry";
-  const body = "";
-  const composeEmail = () => {
-    const url = `mailto:${encodeURIComponent(
-      email
-    )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = url;
-  };
-  const telephoneNumber = +26461221463;
-  const openPhoneDialer = () => {
-    const url = `tel:${encodeURIComponent(telephoneNumber)}`;
-    window.location.href = url;
-  };
-  const address =
-    "No. 96, Columbia Street, Dorado Park Ext. , Windhoek, Namibia";
-  const openGoogleMaps = () => {
-    const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-      address
-    )}`;
-    window.open(url, "_blank");
-  };
+
+
+  useEffect(() => {
+    const handleWhatsappClick = () => {
+      openWhatsApp();
+    };
+
+    const whatsappButton = document.getElementById('whatsappButton');
+    if(whatsappButton){
+      whatsappButton.addEventListener('click', handleWhatsappClick);
+      return () => {
+        whatsappButton.removeEventListener('click', handleWhatsappClick);
+      };
+    }
+  
+  }, []);
+  useEffect(() => {
+    const handleEmailClick = () => {
+      composeEmail();
+    };
+
+    const emailButton = document.getElementById('emailButton');
+    if(emailButton){
+      emailButton.addEventListener('click', handleEmailClick);
+      return () => {
+        emailButton.removeEventListener('click', handleEmailClick);
+      };
+    }
+  
+  }, []);
+  useEffect(() => {
+    const handleMapsClick = () => {
+      openGoogleMaps();
+    };
+
+    const mapsButton = document.getElementById('mapsButton');
+    if(mapsButton){
+      mapsButton.addEventListener('click', handleMapsClick);
+      return () => {
+        mapsButton.removeEventListener('click', handleMapsClick);
+      };
+    }
+  
+  }, []);
+  useEffect(() => {
+    const handlePhoneClick = () => {
+      openPhoneDialer();
+    };
+
+    const phoneButton = document.getElementById('phoneButton');
+    if(phoneButton){
+      phoneButton.addEventListener('click', handlePhoneClick);
+      return () => {
+        phoneButton.removeEventListener('click', handlePhoneClick);
+      };
+    }
+  
+  }, []);
   return (
     <>
       <Box textAlign="center" mt={10}>
@@ -63,7 +121,7 @@ function ContactUs() {
         m={20}
         textAlign={"center"}
       >
-        <SimpleGrid columns={{ base: 1 }} as={"button"} onClick={openWhatsApp}>
+        <SimpleGrid columns={{ base: 1 }} as={"button"} id="whatsappButton">
           <Text fontSize="lg" mb={6}>
             Send us a message
           </Text>
@@ -78,7 +136,7 @@ function ContactUs() {
         <SimpleGrid
           columns={{ base: 1 }}
           as={"button"}
-          onClick={openPhoneDialer}
+          id="phoneButton"
         >
           <Text fontSize="lg" mb={6}>
             Give us a call
@@ -94,17 +152,17 @@ function ContactUs() {
             +{telephoneNumber}{" "}
           </Text>
         </SimpleGrid>
-        <SimpleGrid columns={{ base: 1 }} as={"button"} onClick={composeEmail}>
+        <SimpleGrid columns={{ base: 1 }} as={"button"} id="emailButton">
           <Text fontSize="lg" mb={6}>
             Send us an email
           </Text>
-          <FaEnvelope size="sm" style={{ width: "4em", margin: "auto" }} />
+          <FaEnvelope style={{ width: "4em", height: "60px !important",margin: "auto" }} />
           <Text> {email}</Text>
         </SimpleGrid>
         <SimpleGrid
           columns={{ base: 1 }}
           as={"button"}
-          onClick={openGoogleMaps}
+          id="mapsButton"
         >
           <Text fontSize="lg" mb={6}>
             Find Us Here

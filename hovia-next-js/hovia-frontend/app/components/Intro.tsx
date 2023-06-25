@@ -10,6 +10,7 @@ import {
   Icon,
   useColorModeValue,
   Button,
+  Link,
 } from "@chakra-ui/react";
 import {
   IoAnalyticsSharp,
@@ -62,16 +63,18 @@ export default function WhoWeAre() {
           {/* <Heading>ABOUT US</Heading> */}
           <Text color={"gray.500"} fontSize={"lg"}>
             We are Educational Strategist, offering a variety of Educational
-            Services to Learners, Students, Teachers, Trainers, Parents &amp;
+            Services to Learners, Students, Teachers, Trainers, Parents &
             Education Institutions. HOVIA is the first ever (pioneer)
             educational consultancy 100% privately-owned by a black Namibian
             female entrepreneur. Our services include Talent Management,
             Educational Projects Management, Training and Development,
-            Educational Coaching &amp; Mentorship, Education Quality Assurance
+            Educational Coaching & Mentorship, Education Quality Assurance
             Services, among other. At HOVIA, we embrace a culture of Lifelong
             Teaching and Learning.{" "}
           </Text>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+          <Link href={"about-us"}>
+
               <Button
                 rounded={'full'}
                 bg={'#008000'}
@@ -81,6 +84,7 @@ export default function WhoWeAre() {
                 }}>
                 Learn More
               </Button>
+              </Link>
             </Stack>
           {/* <Stack
             spacing={4}
