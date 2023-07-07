@@ -14,17 +14,18 @@ import {
   FaLinkedin,
   FaFacebook,
 } from "react-icons/fa";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import Image from "next/image";
 
 const SocialButton = ({
   children,
   label,
-  href,
-}: {
+  id,
+}: // href,
+{
   children: ReactNode;
   label: string;
-  href: string;
+  id: string;
 }) => {
   return (
     <chakra.button
@@ -34,7 +35,7 @@ const SocialButton = ({
       h={8}
       cursor={"pointer"}
       as={"a"}
-      href={href}
+      id={id}
       display={"inline-flex"}
       alignItems={"center"}
       justifyContent={"center"}
@@ -49,7 +50,63 @@ const SocialButton = ({
   );
 };
 
+const openFacbook = () => {
+  const url = "https://www.facebook.com/profile.php?id=100093975039138";
+  window.open(url, "_blank");
+};
+const openLinkedIn = () => {
+  const url =
+    "https://www.linkedin.com/company/hovia-educational-consultants-hec/";
+  window.open(url, "_blank");
+};
+const openInstagram = () => {
+  const url = "https://www.instagram.com/hoviaconsultants/";
+  window.open(url, "_blank");
+};
+
 export default function SmallWithLogoLeft() {
+  useEffect(() => {
+    const handleFacebooklClick = () => {
+      openFacbook();
+    };
+
+    const emailButton = document.getElementById("FacebookButton");
+    if (emailButton) {
+      emailButton.addEventListener("click", handleFacebooklClick);
+      return () => {
+        emailButton.removeEventListener("click", handleFacebooklClick);
+      };
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleLindkedInClick = () => {
+      openLinkedIn();
+    };
+
+    const emailButton = document.getElementById("LinkedInButton");
+    if (emailButton) {
+      emailButton.addEventListener("click", handleLindkedInClick);
+      return () => {
+        emailButton.removeEventListener("click", handleLindkedInClick);
+      };
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleInstagramClick = () => {
+      openInstagram();
+    };
+
+    const emailButton = document.getElementById("InstagramButton");
+    if (emailButton) {
+      emailButton.addEventListener("click", handleInstagramClick);
+      return () => {
+        emailButton.removeEventListener("click", handleInstagramClick);
+      };
+    }
+  }, []);
+
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
@@ -69,28 +126,39 @@ export default function SmallWithLogoLeft() {
           alt=""
           height={144}
           width={144}
-          style={{ mixBlendMode: "darken"}}
-          />
+          style={{ mixBlendMode: "darken" }}
+        />
         <Text>© 2023 Hovia Education Consultants. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
-          
-          <SocialButton label={"Facebook"} href={"https://www.facebook.com/profile.php?id=100093975039138"} >
-            <FaFacebook />
-          </SocialButton>
-          <SocialButton
-            label={"LInkedIn"}
-            href={
-              "https://www.linkedin.com/company/hovia-educational-consultants-hec/"
-            }
-          >
-            <FaLinkedin />
-          </SocialButton>
-          <SocialButton
-            label={"Instagram"}
-            href={"https://www.instagram.com/hoviaconsultants/"}
-          >
-            <FaInstagram />
-          </SocialButton>
+          <div id="FacebookButton">
+            <SocialButton
+              label={"Facebook"}
+              id="FacebookButton"
+              // href={"https://www.facebook.com/profile.php?id=100093975039138"}
+            >
+              <FaFacebook />
+            </SocialButton>
+          </div>
+          <div id="LinkedInButton">
+            <SocialButton
+              label={"LInkedIn"}
+              id="LinkedInButton"
+              // href={
+              // "https://www.linkedin.com/company/hovia-educational-consultants-hec/"
+              // }
+            >
+              <FaLinkedin />
+            </SocialButton>
+          </div>
+          <div id="InstagramButton ">
+            <SocialButton
+              label={"Instagram"}
+              id="InstagramButton"
+              // href={"https://www.instagram.com/hoviaconsultants/"}
+            >
+              <FaInstagram />
+            </SocialButton>
+          </div>
         </Stack>
       </Container>
     </Box>

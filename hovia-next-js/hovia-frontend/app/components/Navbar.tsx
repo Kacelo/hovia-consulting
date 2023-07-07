@@ -85,8 +85,8 @@ export default function Navbar() {
             <Image
               src="/images/logo/hovialogo.jpg"
               alt=""
-              height={244}
-              width={300}
+              height={144}
+              width={200}
               style={{ mixBlendMode: "darken" }}
             />
           </Link>
