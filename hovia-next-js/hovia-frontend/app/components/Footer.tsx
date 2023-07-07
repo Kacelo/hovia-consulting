@@ -73,7 +73,8 @@ export default function SmallWithLogoLeft() {
           />
         <Text>© 2023 Hovia Education Consultants. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Facebook"} href={"https://www.facebook.com/profile.php?id=100093975039138"}>
+          
+          <SocialButton label={"Facebook"} href={"https://www.facebook.com/profile.php?id=100093975039138"} >
             <FaFacebook />
           </SocialButton>
           <SocialButton
