@@ -2,6 +2,7 @@ import {
   Box,
   chakra,
   Container,
+  Link,
   Stack,
   Text,
   useColorModeValue,
@@ -64,14 +65,14 @@ export default function SmallWithLogoLeft() {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Image
-          src="/images/logo/01_Hovia_Logo HQ.jpg"
-          alt=""
-          height={144}
-          width={144}
-          style={{ mixBlendMode: "darken"}}
-          />
-        <Text>© 2023 Hovia Education Consultants. All rights reserved</Text>
+          {/* <Image
+            src="/images/services/01_Hovia_Logo HQ.jpg"
+            alt=""
+            height={244}
+            width={300}
+            style={{ mixBlendMode: "darken" }}
+          /> */}
+        <Text>©2023 Hovia Education Consultants. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton label={"Facebook"} href={"#"}>
             <FaFacebook />

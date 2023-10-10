@@ -75,6 +75,7 @@ import {
             src={
               `${imageSrc}`
             }
+            style={{width: "-webkit-fill-available"}}
           />
         </Flex>
       </Stack>

@@ -85,7 +85,7 @@ export default function Navbar() {
         >
           <Link href="/">
           <Image
-            src="/images/logo/01_Hovia_Logo HQ.jpg"
+            src="/images/logo/logo.png"
             alt=""
             height={244}
             width={300}
