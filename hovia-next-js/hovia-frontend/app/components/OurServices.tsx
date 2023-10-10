@@ -132,14 +132,6 @@ export default function Services() {
             href={"/services/internship"}
             imageSrc="/images/services/intern2.jpg"
           />
-          {/* <Card
-              heading={'Beauty Products'}
-              icon={<Icon as={FcManager} w={10} h={10} />}
-              description={
-                'Discover a world of beauty at your fingertips with our carefully curated selection of beauty products. From luxurious skincare essentials to makeup must-haves and haircare gems, our collection features top-quality brands that will elevate your beauty routine and enhance your natural glow.'
-              }
-              href={'#'}
-            /> */}
         </Flex>
       </Container>
     </Box>

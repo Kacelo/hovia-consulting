@@ -10,6 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <title>Hovia</title>
       <body style={{ backgroundColor: "#E6E6E6 !important" }}>
         <ChakraProvider>
           <Navbar />

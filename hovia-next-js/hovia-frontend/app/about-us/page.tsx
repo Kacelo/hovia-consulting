@@ -9,6 +9,7 @@
         useBreakpointValue,
       } from '@chakra-ui/react';
       import OurVision from '../components/OurVision';
+      import AboutSectionTwo from "../components/about/AboutSectionTwo";
       
       export default function AboutUS() {
         return (
@@ -40,6 +41,7 @@
             </VStack>
           </Flex>
           <OurVision />
+          <AboutSectionTwo />
 
           </>
         );
